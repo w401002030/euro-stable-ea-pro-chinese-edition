@@ -34,7 +34,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到���贴板！");
+      toast.success("已复制到剪贴板！");
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
