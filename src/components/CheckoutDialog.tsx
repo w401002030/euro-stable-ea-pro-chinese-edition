@@ -37,8 +37,8 @@ export function CheckoutDialog() {
     }
   };
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-      <DialogContent className="sm:max-w-md">
+      <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
+        <DialogContent className="sm:max-w-lg" aria-describedby="checkout-desc">
         <DialogHeader>
           <DialogTitle>联系购买</DialogTitle>
 {selectedPlan && (
@@ -48,32 +48,11 @@ export function CheckoutDialog() {
 )}
         </DialogHeader>
         <div className="py-4 space-y-6 flex flex-col items-center">
-          <svg
-            className="w-56 h-56 md:w-64 md:h-64 mx-auto rounded-xl shadow-lg border"
-            width="300"
-            height="300"
-            viewBox="0 0 300 300"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            
-            <rect width="300" height="300" fill="#10B981" />
-            
-            <rect x="30" y="30" width="60" height="60" fill="#FFFFFF" />
-            <rect x="210" y="30" width="60" height="60" fill="#FFFFFF" />
-            <rect x="30" y="210" width="60" height="60" fill="#FFFFFF" />
-            <rect x="210" y="210" width="60" height="60" fill="#FFFFFF" />
-            
-            <rect x="90" y="90" width="120" height="120" fill="#FFFFFF" stroke="#000000" strokeWidth="4" rx="10" />
-            
-            <rect x="105" y="105" width="20" height="20" fill="#000000" />
-            <rect x="135" y="105" width="20" height="20" fill="#000000" />
-            <rect x="105" y="135" width="20" height="20" fill="#000000" />
-            <rect x="165" y="105" width="20" height="20" fill="#000000" />
-            
-            <text x="150" y="160" fontSize="24" fill="#FFFFFF" text-anchor="middle" font-family="sans-serif">
-              微信二维码
-            </text>
-          </svg>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgAQMAAAAuTTzDAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVRoge2ZO3aDMBBFh0NByRK0FJYGS/NStASXFD6ezE8Kjo2DXCWHNwUG+dI85isRwWB/1CY2uxPxQpQyDfZMs6+vgFqgrNf+3jEv8oc+9QYtuj4AqlASyXoVk/kiYqqa8jQvIvMV0EeQKX4hGjk8E9DnEBWR5abb/ywnhkqYW2Qng/ZzAaC3kHuiQyK/iOxv+DqgFujBJs7j6jlz384JmZhrb8qpmCxQ5MYkbwBqg7L+SJq07jD8NKr2WN0X0DGITWRttWdWxT1nejYdAA0bMYcbeXcoDc063DofSayEA2qBopyY4t5qlzfStjUCdACy+XitXaNGdiRQi3lAtVdJVlsMkvtotU1ZQI3Q5KOK5EnatopaaCgBaoPUfevcIjVnjK5HE2jahvnJIY9sqqa1hXyPkLaFGtARKOu9zXdSnLOuW870VpsBNUOxc6NdTxRqsmn5Gp8BED2OdFSUVcsJUBtULGqLO+PDA6DD0KY2c3Q939Xoee/wvFDWq48kvt3lUPgsAWqCUjklqdtd1V4cpQA6CulCmZwpjgIA/YBsU8ah0mo/eyag95BePbJnH1X80PNVLgD0C+QB7Ypf6qFxaYEAwWD/3L4AbMKs+VF20TgAAAAASUVORK5CYII="
+            alt="微信二维码"
+            className="w-72 h-72 mx-auto rounded-xl shadow-xl [image-rendering:pixelated] [image-rendering:-moz-crisp-edges] [-webkit-image-rendering:optimize-contrast] select-none"
+          />
           <p className="text-sm text-muted-foreground text-center px-4">
             扫码加微信咨询方案详情或电话联系，微电同号
           </p>
