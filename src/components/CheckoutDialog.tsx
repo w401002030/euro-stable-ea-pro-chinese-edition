@@ -23,10 +23,10 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢��来电咨询详细方案或WeChat联系，微信电话同号��，在线时间：am10:00-pm17:00";
-  const descriptionText = selectedPlan
-    ? `��对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
-    : baseDescription;
+  const baseDescription = "欢迎来电咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
+const descriptionText = selectedPlan
+  ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
+  : baseDescription;
   // Contact details
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
@@ -63,7 +63,7 @@ export function CheckoutDialog() {
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
       <DialogContent className="max-w-sm sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>联系购���</DialogTitle>
+          <DialogTitle>联系购买</DialogTitle>
           <DialogDescription className="text-lg md:text-xl font-semibold leading-relaxed mt-2 text-muted-foreground">
             {descriptionText}
           </DialogDescription>
