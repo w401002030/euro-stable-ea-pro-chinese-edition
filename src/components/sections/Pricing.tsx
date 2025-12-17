@@ -12,16 +12,18 @@ import { Button } from "@/components/ui/button";
 import { pricingPlans } from "@/lib/mockData";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 export function Pricing() {
+  const { open } = useCheckoutStore();
   return (
     <section id="pricing" className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            选择适合您���方案
+            选择适合您的方案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付费���终身使用。无订阅，无隐藏费用。
+            一次性���费，终身使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -46,7 +48,7 @@ export function Pricing() {
                     <CardTitle>{plan.name}</CardTitle>
                     {plan.isRecommended && (
                       <Badge variant="default" className="bg-emerald-500">
-                        推荐
+                        推��
                       </Badge>
                     )}
                   </div>
@@ -71,6 +73,7 @@ export function Pricing() {
                 </CardContent>
                 <CardFooter>
                   <Button
+                    onClick={() => open(plan.name)}
                     className={cn(
                       "w-full",
                       plan.isRecommended

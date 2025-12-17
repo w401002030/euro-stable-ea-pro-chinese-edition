@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
+import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { open } = useCheckoutStore();
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -15,7 +17,7 @@ export function Navbar() {
   const navLinks = [
     { name: "性能", href: "#performance" },
     { name: "特性", href: "#features" },
-    { name: "价格", href: "#pricing" },
+    { name: "价���", href: "#pricing" },
     { name: "问答", href: "#faq" },
   ];
   return (
@@ -69,7 +71,10 @@ export function Navbar() {
           </div>
           <div className="flex items-center space-x-2">
             <ThemeToggle className="relative top-0 right-0" />
-            <Button className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white">
+            <Button 
+              onClick={() => open()}
+              className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white"
+            >
               立即购买
             </Button>
           </div>
