@@ -113,7 +113,7 @@ export const pricingPlans = [
       "新闻过滤",
       "高级参数设置",
       "独家Beta访问",
-      "建议初始资金：1000美元账户（美元账户）",
+      "建议初始资金：10000美元账户（美元账户）",
     ],
     isRecommended: false,
   },
