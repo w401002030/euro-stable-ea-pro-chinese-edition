@@ -26,7 +26,7 @@ export function Pricing() {
             一次性付费，终身使用。无订阅，无隐藏费用。
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -56,7 +56,7 @@ export function Pricing() {
                     <span className="text-4xl font-bold text-foreground">
                       {plan.price}
                     </span>
-                    <span className="text-muted-foreground"> / 终身</span>
+                    <span className="text-muted-foreground"> / 终身许可</span>
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
