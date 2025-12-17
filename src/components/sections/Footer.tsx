@@ -10,8 +10,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
           <div className="text-center text-sm text-muted-foreground max-w-4xl mx-auto">
-            <h3 className="font-bold text-xl md:text-2xl mb-4 text-foreground text-center">风险免责声明</h3>
-            <p className="text-lg md:text-xl leading-relaxed mt-2 max-w-3xl mx-auto text-muted-foreground">
+            <h3 className="font-bold text-base md:text-lg mb-4 text-foreground text-center">风险免责声明</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mt-2 max-w-3xl mx-auto">
               外汇交易存在高风险，可能不适合所有投资者。在决定交易外汇之前，您应该仔细考虑您的投资目标、经验水平和风险承受能力。存在蒙受部分或全部初始投资损失的可能性，因此，您不应投入您无法承受损失的资金。过去的表现并非未来结果的指标。
             </p>
 
