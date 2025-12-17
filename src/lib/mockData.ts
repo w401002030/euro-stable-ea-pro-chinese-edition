@@ -45,22 +45,22 @@ export const features: {
   {
     icon: ShieldCheck,
     title: "极低回撤",
-    description: "先进的风险管理系统确保资金回撤控制在最低水平，保护您的资本安全。",
+    description: "先进的风险管理系统确保资金回撤控制在最低水平，保护您的资���安全。",
   },
   {
     icon: Zap,
     title: "全自动策略",
-    description: "无需人工干预，EA 24/7 自动执行交易，抓住每一个市场机会。",
+    description: "无���人工干预，EA 24/7 自动执行交易，抓住每一个市��机会。",
   },
   {
     icon: TrendingUp,
     title: "稳定盈利曲线",
-    description: "经过多年市场数据回测与实盘验证，展现出持续稳定的盈利能力。",
+    description: "���过多年市场数据回测与实盘验证，展现出持续稳定的盈利能力。",
   },
   {
     icon: Clock,
     title: "24/7 技术支持",
-    description: "我们的专业团队随时为您服务，解答您遇到的任何问题。",
+    description: "我们的���业团队随时为您服务，解答您遇到的任何问题。",
   },
   {
     icon: BarChart,
@@ -70,7 +70,7 @@ export const features: {
 {
     icon: LifeBuoy,
     title: "新闻过滤",
-    description: "智能新闻过滤系统，避免突发事件对交易的影响，确保策略在各种市场条件下稳定运行。",
+    description: "���能新闻过滤系统，避免突发事��对交易的影响，确保策略在各种市场条件下稳定运行。",
 },
 ];
 // Data for the pricing plans
@@ -104,7 +104,7 @@ export const pricingPlans = [
   },
   {
     name: "V4.beta",
-    price: "$899",
+    price: "敬请期待",
     features: [
       "3个真实账户终身许可",
       "无限模拟账户许可",
@@ -122,14 +122,14 @@ export const pricingPlans = [
 // Data for the FAQ section
 export const faqItems = [
   {
-    question: "什么是 EA (智能交易系统)？",
+    question: "��么是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的自动化交易程序。它根据设定的交易策略自动执行买卖操作，无需人工干预。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的自动化交易程序。它根据设定的交易策略自动执行��卖操作，无需人工干预。",
   },
   {
-    question: "Euro Stable EA 的最低资金要求是多少？",
+    question: "Euro Stable EA 的最低资金��求是多少？",
     answer:
-      "我们建议最低入金为 1000 美元，以确保 EA 能够在安全的风险水平下有效运行。更低的资金也可以运行，但风险会相应增加。",
+      "我们建议最低入金为 1000 美元，以确保 EA 能够在���全的风险水平下有效运行。更低的资金也可以运行，但风险会相应增加。",
   },
   {
     question: "我需要一直开着电脑吗？",
@@ -142,7 +142,7 @@ export const faqItems = [
       "不复杂。我们提供非常详细的图文安装指南和视频教程。大多数用户可以在 15 分钟内完成所有设置。如果您遇到任何问题，我们的技术支持团队会帮助您。",
   },
   {
-    question: "购买后是否还有其他费用？",
+    question: "购买后是否还有��他费用？",
     answer:
       "没有。您购买的是终身许可证，所有未来的软件更新和策略优化都是免费的，没有任何隐藏费用或订阅费。",
   },
@@ -152,7 +152,7 @@ export const statsData = [
   { icon: TrendingUp, label: "胜率", value: "85.3%" },
   { icon: DollarSign, label: "总盈利", value: "$228,000+" },
   { icon: TrendingDown, label: "最大回撤", value: "15%" },
-  { icon: Users, label: "活跃用户", value: "12,847+" },
+  { icon: Users, label: "��跃用户", value: "12,847+" },
 ];
 // Data for testimonials
 export const testimonials = [
@@ -167,7 +167,7 @@ export const testimonials = [
     role: "Investment Manager",
   },
   {
-    quote: "专业的团队，及时的支持。值得信赖的交易伙伴！",
+    quote: "专业的团队，及时的���持。值得信赖的交易伙伴！",
       author: "Michael Brown",
     role: "Forex Enthusiast",
   },
