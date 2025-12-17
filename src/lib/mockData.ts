@@ -44,23 +44,23 @@ export const features: {
 }[] = [
   {
     icon: ShieldCheck,
-    title: "极低回撤",
-    description: "先进的风险管理系统确保资金回撤控制在最低水平，保护您的资本安全。",
+    title: "极低回��",
+    description: "先进的风险管理系统���保资金回撤控制在最低水平，保护您的资本安全。",
   },
   {
     icon: Zap,
     title: "全自动策略",
-    description: "无需人工干预，EA 24/7 自动执行交易，抓住每一个市场机会。",
+    description: "无需人工干预，EA 24/7 自动执行交易，���住每一个市场机会。",
   },
   {
     icon: TrendingUp,
     title: "稳定盈利曲线",
-    description: "经过多年市场数据回测与实盘验证，展现出持续稳定的盈利能力。",
+    description: "经过多年市场数据回测与实盘验证，展现出持��稳定的盈利能力。",
   },
   {
     icon: Clock,
     title: "24/7 技术支持",
-    description: "我们的专业团队随时为您服务，解答您遇到的任何问题。",
+    description: "我���的专业团队随时为您服务，解答您遇到的任何问题。",
   },
   {
     icon: BarChart,
@@ -69,7 +69,7 @@ export const features: {
   },
 {
     icon: LifeBuoy,
-    title: "新闻过滤",
+    title: "新闻过��",
     description: "智能新闻过滤系统，避免突发事件对交易的影响，确保策略在各种市场条件下稳定运行。",
 },
 ];
@@ -79,7 +79,7 @@ export const pricingPlans = [
     name: "v2.3",
     price: "$299",
       features: [
-        "1个真实账户终身许可",
+        "1个真实账户终身��可",
         "2个模拟账户许可",
         "标准技术支持",
         "建议初始资金：500美元账户（美分账户）",
@@ -92,11 +92,11 @@ export const pricingPlans = [
     price: "$599",
     features: [
       "2个真实账户终身许可",
-      "无限模拟账户许可",
+      "5个模拟账户许可",
       "终身免费更新",
       "优先技术支持",
       "新闻过滤",
-      "高级参数设置",
+      "高��参数设置",
       "建议初始资金：1000美元账户（美元账户）",
       "提供免费挂载VPS云端服务器教程",
     ],
@@ -124,7 +124,7 @@ export const faqItems = [
   {
     question: "什么是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的自动化交易程序。它根据设定的交易策略自动执行买卖操作，无需人工干预。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的自动化交易程序。���根据设定的交易策略自动执行买卖操作，无需人工干预。",
   },
   {
     question: "Euro Stable EA 的最低资金要求是多少？",
@@ -134,7 +134,7 @@ export const faqItems = [
   {
     question: "我需要一直开着电脑吗？",
     answer:
-      "是的，为了让 EA 能够 24/5 不间断运行，您的交易平台需要保持在线。我们强烈建议您使用 VPS (虚拟专用服务器) 来托管您的交易账户，这样可以保证稳定性和连接性。",
+      "是的，为了让 EA 能够 24/5 不间断运行，您的交易平台需要��持在线。我们强烈建议您使用 VPS (虚拟专用服务器) 来托管您的交易账户，这样可以保���稳定性和连接性。",
   },
   {
     question: "安装和设置过程复杂吗？",
@@ -142,7 +142,7 @@ export const faqItems = [
       "不复杂。我们提供非常详细的图文安装指南和视频教程。大多数用户可以在 15 分钟内完成所有设置。如果您遇到任何问题，我们的技术支持团队会帮助您。",
   },
   {
-    question: "购买后是否还有其他费用？",
+    question: "购买���是否还有其他费用？",
     answer:
       "没有。您购买的是终身许可证，所有未来的软件更新和策略优化都是免费的，没有任何隐藏费用或订阅费。",
   },
@@ -157,7 +157,7 @@ export const statsData = [
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变了我的交易生涯。稳定盈利，低回撤，完美的！",
+    quote: "Euro Stable EA 彻底��变了我的交易生涯。稳定盈利，低回撤，完美的！",
       author: "John Smith",
     role: "Full-time Trader",
   },
@@ -167,7 +167,7 @@ export const testimonials = [
     role: "Investment Manager",
   },
   {
-    quote: "专业的团队，及时的支持。值得信赖的交易伙伴！",
+    quote: "专业的团队，及时的���持。值得信赖的交易伙伴！",
       author: "Michael Brown",
     role: "Forex Enthusiast",
   },
