@@ -23,7 +23,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "扫码加微信咨询方案详情或电话联系，微电同号。";
+  const baseDescription = "加微信咨询方案详情或电话联系，微电同号。";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -33,7 +33,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴板！");
+      toast.success("已复制到��贴板！");
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
