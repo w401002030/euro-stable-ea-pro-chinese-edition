@@ -25,13 +25,16 @@ export function CheckoutDialog() {
             {descriptionText}
           </DialogDescription>
         </DialogHeader>
-        <div className="py-4 flex flex-col items-center">
+
+        {/* QR code image – centered with padding */}
+        <div className="py-4 flex justify-center items-center">
           <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgAQMAAAAuTTzDAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVRoge2ZO3aDMBBFh0NByRK0FJYGS/NStASXFD6ezE8Kjo2DXCWHNwUG+dI85isRwWB/1CY2uxPxQpQyDfZMs6+vgFqgrNf+3jEv8oc+9QYtuj4AqlASyXoVk/kiYqqa8jQvIvMV0EeQKX4hGjk8E9DnEBWR5abb/ywnhkqYW2Qng/ZzAaC3kHuiQyK/iOxv+DqgFujBJs7j6jlz384JmZhrb8qpmCxQ5MYkbwBqg7L+SJq07jD8NKr2WN0X0DGITWRttWdWxT1nejYdAA0bMYcbeXcoDc063DofSayEA2qBopyY4t5qlzfStjUCdACy+XitXaNGdiRQi3lAtVdJVlsMkvtotU1ZQI3Q5KOK5EnatopaaCgBaoPUfevcIjVnjK5HE2jahvnJIY9sqqa1hXyPkLaFGtARKOu9zXdSnLOuW870VpsBNUOxc6NdTxRqsmn5Gp8BED2OdFSUVcsJUBtULGqLO+PDA6DD0KY2c3Q939Xoee/wvFDWq48kvt3lUPgsAWqCUjklqdtd1V4cpQA6CulCmZwpjgIA/YBsU8ah0mo/eyag95BePbJnH1X80PNVLgD0C+QB7Ypf6qFxaYEAwWD/3L4AbMKs+VF20TgAAAAASUVORK5CYII="
-            alt="微信二维码"
-            className="w-full h-auto max-h-80 mx-auto rounded-xl shadow-lg object-contain select-none"
+            src="https://via.placeholder.com/288x288/2E7D32/FFFFFF?text=微信二维码"
+            alt="微信二维码，扫码联系购买"
+            className="w-72 h-72 rounded-xl shadow-lg object-contain"
           />
         </div>
+
         <DialogFooter>
           <Button variant="outline" onClick={close} className="w-full">
             关闭
