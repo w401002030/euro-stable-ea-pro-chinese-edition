@@ -26,7 +26,7 @@ export function Pricing() {
             一次性付费，终身使用。无订阅，无隐藏费用。
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -71,20 +71,26 @@ export function Pricing() {
                     ))}
                   </ul>
                 </CardContent>
-                <CardFooter>
-                  <Button
-                    onClick={() => open(plan.name)}
-                    className={cn(
-                      "w-full",
-                      plan.isRecommended
-                        ? "bg-emerald-500 hover:bg-emerald-600 text-white"
-                        : ""
-                    )}
-                    variant={plan.isRecommended ? "default" : "outline"}
-                  >
-                    立即购买
-                  </Button>
-                </CardFooter>
+<CardFooter>
+  {plan.name === "V4.beta" ? (
+    <Button className="w-full" disabled variant="outline">
+      即将推出
+    </Button>
+  ) : (
+    <Button
+      onClick={() => open(plan.name)}
+      className={cn(
+        "w-full",
+        plan.isRecommended
+          ? "bg-emerald-500 hover:bg-emerald-600 text-white"
+          : ""
+      )}
+      variant={plan.isRecommended ? "default" : "outline"}
+    >
+      立即购买
+    </Button>
+  )}
+</CardFooter>
               </Card>
             </motion.div>
           ))}

@@ -101,6 +101,21 @@ export const pricingPlans = [
     ],
     isRecommended: true,
   },
+  {
+    name: "V4.beta",
+    price: "$899",
+    features: [
+      "3个真实账户终身许可",
+      "无限模拟账户许可",
+      "终身免费更新",
+      "极速技术支持",
+      "新闻过滤",
+      "高级参数设置",
+      "独家Beta访问",
+      "建议初始资金：1000美元账户（美元账户）",
+    ],
+    isRecommended: false,
+  },
 ];
 // Data for the FAQ section
 export const faqItems = [
