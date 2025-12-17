@@ -16,33 +16,66 @@ export function CheckoutDialog() {
   const close = useCheckoutStore((state) => state.close);
   const [copied, setCopied] = useState(false);
   const phone = "+86 18666888095";
-  const handleCopy = () => {
-    navigator.clipboard.writeText(phone).then(() => {
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(phone);
+    } catch {
+      // Fallback for browsers where the Clipboard API is unavailable or blocked
+      const textarea = document.createElement('textarea');
+      textarea.value = phone;
+      textarea.style.position = 'fixed';
+      textarea.style.left = '-9999px';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+    } finally {
       setCopied(true);
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
-    });
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>联系购��</DialogTitle>
-          {selectedPlan && (
-            <DialogDescription>
-              您对我们�� "{selectedPlan}" 方案感兴趣
-            </DialogDescription>
-          )}
+          <DialogTitle>联系购买</DialogTitle>
+{selectedPlan && (
+  <DialogDescription>
+    {`您对我们的 "${selectedPlan}" 方案感兴趣`}
+  </DialogDescription>
+)}
         </DialogHeader>
         <div className="py-4 space-y-6 flex flex-col items-center">
-          <img
-            src="https://placehold.co/300x300/10B981/FFFFFF?text=微��二维码&font=roboto"
-            alt="微信二维码"
+          <svg
             className="w-56 h-56 md:w-64 md:h-64 mx-auto rounded-xl shadow-lg border"
-          />
+            width="300"
+            height="300"
+            viewBox="0 0 300 300"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            
+            <rect width="300" height="300" fill="#10B981" />
+            
+            <rect x="30" y="30" width="60" height="60" fill="#FFFFFF" />
+            <rect x="210" y="30" width="60" height="60" fill="#FFFFFF" />
+            <rect x="30" y="210" width="60" height="60" fill="#FFFFFF" />
+            <rect x="210" y="210" width="60" height="60" fill="#FFFFFF" />
+            
+            <rect x="90" y="90" width="120" height="120" fill="#FFFFFF" stroke="#000000" strokeWidth="4" rx="10" />
+            
+            <rect x="105" y="105" width="20" height="20" fill="#000000" />
+            <rect x="135" y="105" width="20" height="20" fill="#000000" />
+            <rect x="105" y="135" width="20" height="20" fill="#000000" />
+            <rect x="165" y="105" width="20" height="20" fill="#000000" />
+            
+            <text x="150" y="160" fontSize="24" fill="#FFFFFF" text-anchor="middle" font-family="sans-serif">
+              微信二维码
+            </text>
+          </svg>
           <p className="text-sm text-muted-foreground text-center px-4">
-            扫码加微信咨询方案详情或电话联系
+            扫码加微信咨询方案详情或电话联系，微电同号
           </p>
           <div className="w-full px-4">
             <div className="flex items-center justify-between p-3 bg-secondary rounded-lg">
@@ -65,9 +98,9 @@ export function CheckoutDialog() {
           </div>
         </div>
         <DialogFooter>
-          <Button variant="outline" onClick={close} className="w-full">
-            ��闭
-          </Button>
+<Button variant="outline" onClick={close} className="w-full">
+  关闭
+</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
