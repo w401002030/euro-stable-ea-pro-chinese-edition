@@ -13,28 +13,28 @@ import {
 // Mock data for the performance chart
 export const performanceData = [
   // 2024年3月 – 2025年12月 (22 months)
-  { name: "2024年3月", profit: 12655 },
-  { name: "2024年4月", profit: 12908 },
-  { name: "2024年5月", profit: 13288 },
-  { name: "2024年6月", profit: 13541 },
-  { name: "2024年7月", profit: 14174 },
-  { name: "2024年8月", profit: 14933 },
-  { name: "2024年9月", profit: 15819 },
-  { name: "2024年10月", profit: 17085 },
-  { name: "2024年11月", profit: 18730 },
-  { name: "2024年12月", profit: 20881 },
-  { name: "2025年1月", profit: 23793 },
-  { name: "2025年2月", profit: 29107 },
+  { name: "2024年3月", profit: 1000 },
+  { name: "2024年4月", profit: 1045 },
+  { name: "2024年5月", profit: 1112 },
+  { name: "2024年6月", profit: 1158 },
+  { name: "2024年7月", profit: 1277 },
+  { name: "2024年8月", profit: 1428 },
+  { name: "2024年9月", profit: 1616 },
+  { name: "2024年10月", profit: 1905 },
+  { name: "2024年11月", profit: 2316 },
+  { name: "2024年12月", profit: 2926 },
+  { name: "2025年1月", profit: 3869 },
+  { name: "2025年2月", profit: 5955 },
   // Gradual growth with two subtle dips
-  { name: "2025年3月", profit: 34948 },
-  { name: "2025年4月", profit: 41887 },
-  { name: "2025年5月", profit: 40771 }, // dip (~2.7%)
-  { name: "2025年6月", profit: 48848 },
-  { name: "2025年7月", profit: 58624 },
-  { name: "2025年8月", profit: 56855 }, // dip (~3.0%)
-  { name: "2025年9月", profit: 68212 },
-  { name: "2025年10月", profit: 81880 },
-  { name: "2025年11月", profit: 98205 },
+  { name: "2025年3月", profit: 8785 },
+  { name: "2025年4月", profit: 12924 },
+  { name: "2025年5月", profit: 12200 }, // dip (~5.6%)
+  { name: "2025年6月", profit: 17934 },
+  { name: "2025年7月", profit: 26474 },
+  { name: "2025年8月", profit: 24824 }, // dip (~6.3%)
+  { name: "2025年9月", profit: 36594 },
+  { name: "2025年10月", profit: 54024 },
+  { name: "2025年11月", profit: 79624 },
   { name: "2025年12月", profit: 117803 },
 ];
 // Data for the key features section
