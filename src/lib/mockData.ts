@@ -12,18 +12,18 @@ import {
 } from "lucide-react";
 // Mock data for the performance chart
 export const performanceData = [
-  { name: "第1周", profit: 1000 },
-  { name: "第2周", profit: 1025 },
-  { name: "第3周", profit: 1060 },
-  { name: "第4周", profit: 1090 },
-  { name: "第5周", profit: 1135 },
-  { name: "第6周", profit: 1180 },
-  { name: "第7周", profit: 1210 },
-  { name: "第8周", profit: 1255 },
-  { name: "第9周", profit: 1300 },
-  { name: "第10周", profit: 1360 },
-  { name: "第11周", profit: 1420 },
-  { name: "第12周", profit: 1500 },
+  { name: "第1月", profit: 1000 },
+  { name: "第2月", profit: 1025 },
+  { name: "第3月", profit: 1060 },
+  { name: "第4月", profit: 1090 },
+  { name: "第5月", profit: 1135 },
+  { name: "第6月", profit: 1180 },
+  { name: "第7月", profit: 1210 },
+  { name: "第8月", profit: 1255 },
+  { name: "第9月", profit: 1300 },
+  { name: "第10月", profit: 1360 },
+  { name: "第11月", profit: 1420 },
+  { name: "第12月", profit: 1500 },
 ];
 // Data for the key features section
 export const features: {
