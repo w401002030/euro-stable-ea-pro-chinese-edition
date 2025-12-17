@@ -63,12 +63,12 @@ export function CheckoutDialog() {
       <DialogContent className="sm:max-w-md" aria-describedby="checkout-desc">
         <DialogHeader>
           <DialogTitle>联系购买</DialogTitle>
-<DialogDescription id="checkout-desc">{descriptionText}</DialogDescription>
+<DialogDescription><span id="checkout-desc">{descriptionText}</span></DialogDescription>
         </DialogHeader>
         <div className="py-4 flex flex-col items-center gap-3">
-          <p className="flex items-center gap-2 text-xl font-bold leading-tight text-foreground w-full justify-between">
+          <p className="flex items-center gap-2 text-2xl lg:text-3xl font-bold leading-snug text-foreground w-full justify-between">
             <span>联系电话：</span>
-            <code className="font-mono bg-muted px-1.5 py-px rounded text-xs select-all">
+            <code className="font-mono bg-muted px-1.5 py-px rounded text-sm select-all">
               {phoneNum}
             </code>
             <Button
@@ -81,9 +81,9 @@ export function CheckoutDialog() {
               复制
             </Button>
           </p>
-          <p className="flex items-center gap-2 text-xl font-bold leading-tight text-foreground w-full justify-between">
+          <p className="flex items-center gap-2 text-2xl lg:text-3xl font-bold leading-snug text-foreground w-full justify-between">
             <span>联系邮箱：</span>
-            <code className="font-mono bg-muted px-1.5 py-px rounded text-xs select-all">
+            <code className="font-mono bg-muted px-1.5 py-px rounded text-sm select-all">
               {emailAddr}
             </code>
             <Button
