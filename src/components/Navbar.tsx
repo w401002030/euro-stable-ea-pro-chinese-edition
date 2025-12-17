@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
-import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const open = useCheckoutStore((state) => state.open);
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -15,11 +13,10 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navLinks = [
-    { name: "战绩", href: "#performance" },
+    { name: "性能", href: "#performance" },
     { name: "特性", href: "#features" },
     { name: "价格", href: "#pricing" },
-    { name: "操作说明", href: "#operation" },
-    { name: "常见问题", href: "#faq" },
+    { name: "问答", href: "#faq" },
   ];
   return (
     <motion.header
@@ -34,7 +31,7 @@ export function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-4">
             <div className="flex-shrink-0">
               <a href="#" className="flex items-center space-x-2">
@@ -53,17 +50,17 @@ export function Navbar() {
                     d="M12 12.25a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5z"
                   />
                 </svg>
-                <span className="font-bold text-2xl lg:text-3xl text-foreground">
+                <span className="font-bold text-xl text-foreground">
                   Euro Stable EA
                 </span>
               </a>
             </div>
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-6">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {link.name}
                 </a>
@@ -72,11 +69,7 @@ export function Navbar() {
           </div>
           <div className="flex items-center space-x-2">
             <ThemeToggle className="relative top-0 right-0" />
-            <Button
-              onClick={() => open()}
-              size="lg"
-              className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl"
-            >
+            <Button className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white">
               立即购买
             </Button>
           </div>
