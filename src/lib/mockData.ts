@@ -65,7 +65,7 @@ export const features: {
 // Data for the pricing plans
 export const pricingPlans = [
   {
-    name: "V2版",
+    name: "V2",
     price: "$299",
     features: [
       "1个真实账户终身许可",
@@ -76,7 +76,7 @@ export const pricingPlans = [
     isRecommended: false,
   },
   {
-    name: "v3Pro版",
+    name: "v3Pro",
     price: "$599",
     features: [
       "2个真实账户终身许可",

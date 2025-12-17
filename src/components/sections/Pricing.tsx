@@ -45,7 +45,7 @@ export function Pricing() {
               >
                 <CardHeader>
                   <div className="flex justify-between items-center">
-                    <CardTitle>{plan.name}</CardTitle>
+                    <CardTitle className="text-2xl md:text-3xl font-bold">{plan.name}</CardTitle>
                     {plan.isRecommended && (
                       <Badge variant="default" className="bg-emerald-500">
                         推荐
