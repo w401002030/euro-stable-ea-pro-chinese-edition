@@ -18,12 +18,12 @@ export const performanceData = [
   { name: "第4月", profit: 1090 },
   { name: "第5月", profit: 1135 },
   { name: "第6月", profit: 1180 },
-  { name: "第7月", profit: 1500 },
-  { name: "第8月", profit: 2000 },
-  { name: "第9月", profit: 2800 },
-  { name: "第10月", profit: 3800 },
-  { name: "第11月", profit: 5200 },
-  { name: "第12月", profit: 7500 },
+  { name: "第7月", profit: 1300 },
+  { name: "第8月", profit: 1450 },
+  { name: "第9月", profit: 1620 },
+  { name: "第10月", profit: 1820 },
+  { name: "第11月", profit: 2050 },
+  { name: "第12月", profit: 2300 },
 ];
 // Data for the key features section
 export const features: {
