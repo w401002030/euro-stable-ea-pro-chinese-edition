@@ -12,7 +12,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "扫码加微信咨询���案详情或电话联系，微电同号。";
+  const baseDescription = "扫码加微信咨询方案详情或电话联系，微电同号。";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -29,7 +29,7 @@ export function CheckoutDialog() {
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgAQMAAAAuTTzDAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVRoge2ZO3aDMBBFh0NByRK0FJYGS/NStASXFD6ezE8Kjo2DXCWHNwUG+dI85isRwWB/1CY2uxPxQpQyDfZMs6+vgFqgrNf+3jEv8oc+9QYtuj4AqlASyXoVk/kiYqqa8jQvIvMV0EeQKX4hGjk8E9DnEBWR5abb/ywnhkqYW2Qng/ZzAaC3kHuiQyK/iOxv+DqgFujBJs7j6jlz384JmZhrb8qpmCxQ5MYkbwBqg7L+SJq07jD8NKr2WN0X0DGITWRttWdWxT1nejYdAA0bMYcbeXcoDc063DofSayEA2qBopyY4t5qlzfStjUCdACy+XitXaNGdiRQi3lAtVdJVlsMkvtotU1ZQI3Q5KOK5EnatopaaCgBaoPUfevcIjVnjK5HE2jahvnJIY9sqqa1hXyPkLaFGtARKOu9zXdSnLOuW870VpsBNUOxc6NdTxRqsmn5Gp8BED2OdFSUVcsJUBtULGqLO+PDA6DD0KY2c3Q939Xoee/wvFDWq48kvt3lUPgsAWqCUjklqdtd1V4cpQA6CulCmZwpjgIA/YBsU8ah0mo/eyag95BePbJnH1X80PNVLgD0C+QB7Ypf6qFxaYEAwWD/3L4AbMKs+VF20TgAAAAASUVORK5CYII="
             alt="微信二维码"
-            className="w-64 h-64 mx-auto rounded-xl shadow-lg [image-rendering:pixelated] select-none"
+            className="w-full h-auto max-h-80 mx-auto rounded-xl shadow-lg object-contain select-none"
           />
         </div>
         <DialogFooter>
