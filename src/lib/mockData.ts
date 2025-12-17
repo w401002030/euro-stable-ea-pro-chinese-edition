@@ -77,7 +77,7 @@ export const pricingPlans = [
   },
   {
     name: "v3Pro版",
-    price: "$499",
+    price: "$599",
     features: [
       "2个真实账户终身许可",
       "无限模拟账户许可",
