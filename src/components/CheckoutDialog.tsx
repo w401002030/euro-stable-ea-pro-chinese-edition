@@ -34,7 +34,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴板！");
+      toast.success("已复��到剪贴板！");
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
@@ -64,11 +64,13 @@ export function CheckoutDialog() {
       <DialogContent className="max-w-sm sm:max-w-md" aria-describedby="checkout-desc">
         <DialogHeader>
           <DialogTitle>联系购买</DialogTitle>
-<DialogDescription><span id="checkout-desc">{descriptionText}</span></DialogDescription>
+          <DialogDescription id="checkout-desc" className="text-xl md:text-2xl font-semibold leading-relaxed mt-2 text-muted-foreground">
+            {descriptionText}
+          </DialogDescription>
         </DialogHeader>
         <div className="py-4 flex flex-col items-center gap-3">
           <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
-            <span className="text-base text-muted-foreground shrink-0">联系电话：</span>
+            <span className="text-base text-muted-foreground shrink-0">联系电话���</span>
             <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
               {phoneNum}
             </code>
