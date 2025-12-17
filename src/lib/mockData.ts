@@ -97,6 +97,7 @@ export const pricingPlans = [
       "终身免费更新",
       "优先技术支持",
       "高级参数设置",
+      "建议初始资金：10000美分账户",
     ],
     isRecommended: true,
   },
