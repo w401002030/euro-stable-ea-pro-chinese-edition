@@ -84,7 +84,7 @@ export const pricingPlans = [
       "无限模拟账户许可",
       "终身免费更新",
       "标准技术支持",
-      "5000美分账户",
+      "50000美分账户",
     ],
     isRecommended: false,
   },
