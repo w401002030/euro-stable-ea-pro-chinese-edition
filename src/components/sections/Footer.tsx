@@ -16,9 +16,9 @@ export function Footer() {
             </p>
 
           </div>
-          <div className="flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-4 mt-12 lg:mt-0 max-w-4xl mx-auto lg:pr-0">
+          <div className="flex justify-center items-center gap-4 mt-12 mx-auto max-w-4xl w-full">
             <Button
-              className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 px-8 py-3 w-full max-w-sm lg:w-auto mx-auto lg:mx-0 font-semibold rounded-xl"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 px-8 py-3 w-full max-w-sm mx-auto font-semibold rounded-xl"
               onClick={() => open()}
               variant="default"
             >
