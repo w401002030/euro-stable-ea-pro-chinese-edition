@@ -38,24 +38,22 @@ export function CheckoutDialog() {
   };
   return (
       <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-        <DialogContent className="sm:max-w-lg" aria-describedby="checkout-desc">
-        <DialogHeader>
-          <DialogTitle>联系购买</DialogTitle>
-{selectedPlan && (
-  <DialogDescription>
-    {`您对我们的 "${selectedPlan}" 方案感兴趣`}
+        <DialogContent className="sm:max-w-xl lg:max-w-2xl" ariaDescribedBy="checkout-desc">
+<DialogHeader>
+  <DialogTitle>联系购买</DialogTitle>
+  <DialogDescription id="checkout-desc">
+    {selectedPlan
+      ? `您对我们的 "${selectedPlan}" 方案感兴趣`
+      : '扫码加微信咨询方案详情或电话联系'}
   </DialogDescription>
-)}
-        </DialogHeader>
+</DialogHeader>
         <div className="py-4 space-y-6 flex flex-col items-center">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgAQMAAAAuTTzDAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVRoge2ZO3aDMBBFh0NByRK0FJYGS/NStASXFD6ezE8Kjo2DXCWHNwUG+dI85isRwWB/1CY2uxPxQpQyDfZMs6+vgFqgrNf+3jEv8oc+9QYtuj4AqlASyXoVk/kiYqqa8jQvIvMV0EeQKX4hGjk8E9DnEBWR5abb/ywnhkqYW2Qng/ZzAaC3kHuiQyK/iOxv+DqgFujBJs7j6jlz384JmZhrb8qpmCxQ5MYkbwBqg7L+SJq07jD8NKr2WN0X0DGITWRttWdWxT1nejYdAA0bMYcbeXcoDc063DofSayEA2qBopyY4t5qlzfStjUCdACy+XitXaNGdiRQi3lAtVdJVlsMkvtotU1ZQI3Q5KOK5EnatopaaCgBaoPUfevcIjVnjK5HE2jahvnJIY9sqqa1hXyPkLaFGtARKOu9zXdSnLOuW870VpsBNUOxc6NdTxRqsmn5Gp8BED2OdFSUVcsJUBtULGqLO+PDA6DD0KY2c3Q939Xoee/wvFDWq48kvt3lUPgsAWqCUjklqdtd1V4cpQA6CulCmZwpjgIA/YBsU8ah0mo/eyag95BePbJnH1X80PNVLgD0C+QB7Ypf6qFxaYEAwWD/3L4AbMKs+VF20TgAAAAASUVORK5CYII="
             alt="微信二维码"
-            className="w-72 h-72 mx-auto rounded-xl shadow-xl [image-rendering:pixelated] [image-rendering:-moz-crisp-edges] [-webkit-image-rendering:optimize-contrast] select-none"
+            className="w-80 h-80 mx-auto rounded-xl shadow-xl [image-rendering:pixelated] [image-rendering:-moz-crisp-edges] [-webkit-image-rendering:optimize-contrast] select-none"
           />
-          <p className="text-sm text-muted-foreground text-center px-4">
-            扫码加微信咨询方案详情或电话联系，微电同号
-          </p>
+
           <div className="w-full px-4">
             <div className="flex items-center justify-between p-3 bg-secondary rounded-lg">
               <span className="font-mono text-lg text-secondary-foreground">
