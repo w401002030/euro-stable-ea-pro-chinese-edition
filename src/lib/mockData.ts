@@ -68,11 +68,11 @@ export const features: {
     title: "多货币对支持",
     description: "完美支持 EURUSD, GBPUSD, USDJPY 等主流货币对，分散风险。",
   },
-  {
+{
     icon: LifeBuoy,
-    title: "终身免费更新",
-    description: "一次购买，即可享受所有后续策略优化与软件版本更新。",
-  },
+    title: "新闻过滤",
+    description: "智能新闻过滤系统，避免突发事件对交易的影响，确保策略在各种市场条件下稳定运行。",
+},
 ];
 // Data for the pricing plans
 export const pricingPlans = [
