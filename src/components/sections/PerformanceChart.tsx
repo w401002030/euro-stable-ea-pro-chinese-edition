@@ -39,7 +39,7 @@ export function PerformanceChart() {
             <div className="flex justify-center mt-8">
               <Button
                 size="lg"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.open('https://www.myfxbook.com/zh/members/RobotForexProEA/eurostable-ea-lite/10995603', '_blank')}
                 className="w-full max-w-sm mx-auto bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 查看实盘业绩
