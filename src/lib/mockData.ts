@@ -12,18 +12,30 @@ import {
 } from "lucide-react";
 // Mock data for the performance chart
 export const performanceData = [
-  { name: "第1月", profit: 1000 },
-  { name: "第2月", profit: 1110 },
-  { name: "第3月", profit: 1060 },
-  { name: "第4月", profit: 1180 },
-  { name: "第5月", profit: 1275 },
-  { name: "第6月", profit: 1190 },
-  { name: "第7月", profit: 1400 },
-  { name: "第8月", profit: 1880 },
-  { name: "第9月", profit: 1650 },
-  { name: "第10月", profit: 2150 },
-  { name: "第11月", profit: 2080 },
-  { name: "第12月", profit: 2300 },
+  // 2024年3月 – 2025年12月 (22 months)
+  { name: "2024年3月", profit: 1000 },
+  { name: "2024年4月", profit: 1020 },
+  { name: "2024年5月", profit: 1050 },
+  { name: "2024年6月", profit: 1070 },
+  { name: "2024年7月", profit: 1120 },
+  { name: "2024年8月", profit: 1180 },
+  { name: "2024年9月", profit: 1250 },
+  { name: "2024年10月", profit: 1350 },
+  { name: "2024年11月", profit: 1480 },
+  { name: "2024年12月", profit: 1650 },
+  { name: "2025年1月", profit: 1880 },
+  { name: "2025年2月", profit: 2300 },
+  // Gradual growth with two subtle dips
+  { name: "2025年3月", profit: 2760 },
+  { name: "2025年4月", profit: 3310 },
+  { name: "2025年5月", profit: 3220 }, // dip (~2.7%)
+  { name: "2025年6月", profit: 3860 },
+  { name: "2025年7月", profit: 4630 },
+  { name: "2025年8月", profit: 4490 }, // dip (~3.0%)
+  { name: "2025年9月", profit: 5390 },
+  { name: "2025年10月", profit: 6470 },
+  { name: "2025年11月", profit: 7760 },
+  { name: "2025年12月", profit: 9310 },
 ];
 // Data for the key features section
 export const features: {
