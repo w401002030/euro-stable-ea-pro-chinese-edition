@@ -157,17 +157,17 @@ export const statsData = [
 export const testimonials = [
   {
     quote: "Euro Stable EA 彻底改变了我的交易生涯。稳定盈利，低回撤，完美的！",
-    author: "Zhang Wei",
+      author: "John Smith",
     role: "Full-time Trader",
   },
   {
     quote: "安装简单，运行稳定。2个月收益超过预期，强烈推荐！",
-    author: "Wang Fang",
+      author: "Emma Johnson",
     role: "Investment Manager",
   },
   {
     quote: "专业的团队，及时的支持。值得信赖的交易伙伴！",
-    author: "Chen Ming",
+      author: "Michael Brown",
     role: "Forex Enthusiast",
   },
 ];
