@@ -38,7 +38,7 @@ export function CheckoutDialog() {
   };
   return (
       <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-        <DialogContent className="sm:max-w-xl lg:max-w-2xl" ariaDescribedBy="checkout-desc">
+        <DialogContent className="sm:max-w-xl lg:max-w-2xl" aria-describedby="checkout-desc">
 <DialogHeader>
   <DialogTitle>联系购买</DialogTitle>
   <DialogDescription id="checkout-desc">
