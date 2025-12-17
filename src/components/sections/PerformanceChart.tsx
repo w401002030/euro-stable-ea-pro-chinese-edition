@@ -15,6 +15,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { performanceData } from "@/lib/mockData";
+import { Button } from "@/components/ui/button";
 export function PerformanceChart() {
   return (
     <section
@@ -35,6 +36,15 @@ export function PerformanceChart() {
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               查看我们的EA从1000美元初始资金的稳定增长曲线。
             </p>
+            <div className="flex justify-center mt-8">
+              <Button
+                size="lg"
+                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full max-w-sm mx-auto bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                查看实盘业绩
+              </Button>
+            </div>
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10">
             <CardHeader>
