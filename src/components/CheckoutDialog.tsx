@@ -23,7 +23,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢��来电咨询详细方案或WeChat联系，微��电话同号码，在线时间：am10:00-pm17:00";
+  const baseDescription = "欢迎来电咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -34,7 +34,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴板！");
+      toast.success("已复制到���贴板！");
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
@@ -52,7 +52,7 @@ export function CheckoutDialog() {
       textarea.select();
       const ok = document.execCommand("copy");
       document.body.removeChild(textarea);
-      toast.success(ok ? "已复制到剪贴板！" : "复制失���");
+      toast.success(ok ? "已复制到剪贴板！" : "复制失败");
     }
   }, []);
   // Early exit when the dialog is not open
@@ -83,7 +83,7 @@ export function CheckoutDialog() {
             </Button>
           </p>
           <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
-            <span className="text-base text-muted-foreground shrink-0">海外电话：</span>
+            <span className="text-base text-muted-foreground shrink-0">国际联系：</span>
             <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
               {overseasPhoneNum}
             </code>
