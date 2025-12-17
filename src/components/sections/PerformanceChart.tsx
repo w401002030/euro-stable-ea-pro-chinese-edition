@@ -30,10 +30,10 @@ export function PerformanceChart() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              真实的历���性能
+              真实的历史性能
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              查看我们的EA在过去12周内模拟的稳定资��增长曲线。
+              查看我们的EA从1000美元初始资金的稳定增长曲线。
             </p>
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10">
@@ -82,7 +82,7 @@ export function PerformanceChart() {
                     axisLine={false}
                     tickMargin={8}
                     fontSize={14}
-                    domain={['dataMin - 500', 'dataMax + 500']}
+                    domain={['dataMin - 50', 'dataMax + 50']}
                   />
                   <Tooltip
                     contentStyle={{

@@ -12,18 +12,18 @@ import {
 } from "lucide-react";
 // Mock data for the performance chart
 export const performanceData = [
-  { name: "第1周", profit: 10000 },
-  { name: "第2周", profit: 10250 },
-  { name: "第3周", profit: 10600 },
-  { name: "第4周", profit: 10900 },
-  { name: "第5周", profit: 11350 },
-  { name: "第6周", profit: 11800 },
-  { name: "第7周", profit: 12100 },
-  { name: "第8周", profit: 12550 },
-  { name: "第9周", profit: 13000 },
-  { name: "第10周", profit: 13600 },
-  { name: "第11周", profit: 14200 },
-  { name: "第12周", profit: 15000 },
+  { name: "第1周", profit: 1000 },
+  { name: "第2周", profit: 1025 },
+  { name: "第3周", profit: 1060 },
+  { name: "第4周", profit: 1090 },
+  { name: "第5周", profit: 1135 },
+  { name: "第6周", profit: 1180 },
+  { name: "第7周", profit: 1210 },
+  { name: "第8周", profit: 1255 },
+  { name: "第9周", profit: 1300 },
+  { name: "第10周", profit: 1360 },
+  { name: "第11周", profit: 1420 },
+  { name: "第12周", profit: 1500 },
 ];
 // Data for the key features section
 export const features: {
@@ -33,23 +33,23 @@ export const features: {
 }[] = [
   {
     icon: ShieldCheck,
-    title: "极低回撤",
-    description: "先进的风险管理系统，确保资金回撤控制在最低水平，保护您的资本安全。",
+    title: "极低回��",
+    description: "先进的风险管理系统，确保���金回撤控制在最低水平，保护您的资本安全。",
   },
   {
     icon: Zap,
     title: "全自动策略",
-    description: "无需人工干预，EA 24/7 自动执行交易，抓住每一个市场机会。",
+    description: "无需人工干预，EA 24/7 自动执行交易，���住每一个市场机会。",
   },
   {
     icon: TrendingUp,
-    title: "稳定盈利曲线",
-    description: "经过多年市场数据回测与实盘验证，展现出持续稳定的盈利能力。",
+    title: "稳定盈利曲��",
+    description: "经过多年市场数据回测与实盘验证，展现��持续稳定的盈利能力。",
   },
   {
     icon: Clock,
     title: "24/7 技术支持",
-    description: "我们的专业团队随时为您服务，解答您遇到的任何问题。",
+    description: "我��的专业团队随时为您服务，解答您遇到的任何问题。",
   },
   {
     icon: BarChart,
@@ -59,13 +59,13 @@ export const features: {
   {
     icon: LifeBuoy,
     title: "终身免费更新",
-    description: "一次购买，即可享受所有后续策略优化和软件版本更新。",
+    description: "一次购买，即可享受��有后续策略优化和软件版本更新。",
   },
 ];
 // Data for the pricing plans
 export const pricingPlans = [
   {
-    name: "标准版",
+    name: "��准版",
     price: "$299",
     features: [
       "1个真实账户终身许可",
@@ -83,7 +83,7 @@ export const pricingPlans = [
       "无限模拟账户许可",
       "终身免费更新",
       "优先技术支持",
-      "高级参数设置",
+      "高级参���设置",
     ],
     isRecommended: true,
   },
@@ -98,7 +98,7 @@ export const faqItems = [
   {
     question: "Euro Stable EA 的最低资金要求是多少？",
     answer:
-      "我们建议最低入金为 1000 美元，以确保 EA 能够在安全的风险水平下有效运行。更低的资金也可以运行，但风险会相应增加。",
+      "我们建议最低入金为 1000 美元，以确保 EA 能��在安全的风险水平下有效运行。更低的资金也可以运行，但风险会相应增加。",
   },
   {
     question: "我需要一直开着电脑吗？",
@@ -106,12 +106,12 @@ export const faqItems = [
       "是的，为了让 EA 能够 24/5 不间断运行，您的交易平台需要保持在线。我们强烈建议您使用 VPS (虚拟专用服务器) 来托管您的交易账户，这样可以保证稳定性和连接性。",
   },
   {
-    question: "安装和设置过程复杂吗？",
+    question: "安装和���置过程复杂吗？",
     answer:
       "不复杂。我们提供非常详细的图文安装指南和视频教程。大多数用户可以在 15 分钟内完成所有设置。如果您遇到任何问题，我们的技术支持团队会帮助您。",
   },
   {
-    question: "购买后是否还有其他费用？",
+    question: "购买后是否还有其��费用？",
     answer:
       "没有。您购买的是终身许可证，所有未来的软件更新和策略优化都是免费的，没有任何隐藏费用或订阅费。",
   },
@@ -126,7 +126,7 @@ export const statsData = [
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变了我的交易生涯。稳定盈利，低回撤，完美！",
+    quote: "Euro Stable EA 彻底改变了我的交易生涯。稳定盈利，低回撤，完���！",
     author: "张伟",
     role: "全职交易员",
   },
