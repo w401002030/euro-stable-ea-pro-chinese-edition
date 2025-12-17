@@ -114,7 +114,7 @@ export const pricingPlans = [
       "高级参数设置",
       "独家Beta访问",
       "建议初始资金：10000美元账户（美元账户）",
-      "提供免费挂载VPS云端服务器教程",
+      "更加专业低延迟稳定的VPS专用服务器",
     ],
     isRecommended: false,
   },
