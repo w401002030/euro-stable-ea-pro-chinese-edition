@@ -77,7 +77,7 @@ export const features: {
 // Data for the pricing plans
 export const pricingPlans = [
   {
-    name: "V2",
+    name: "v2.3",
     price: "$299",
     features: [
       "1个真实账户终身许可",
