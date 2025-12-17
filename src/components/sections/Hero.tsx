@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 export function Hero() {
-  const { open } = useCheckoutStore();
+  const open = useCheckoutStore((state) => state.open);
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
       <div
@@ -25,7 +25,7 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300 text-pretty">
             释放您的交易潜力。我们的智能交易系统 (EA)
-            采用先进算法，旨在实现��期稳定的资本增长，同时将风险降至最低。
+            采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button
@@ -33,7 +33,7 @@ export function Hero() {
               onClick={() => open()}
               className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              立即获��
+              立即获取
             </Button>
             <Button
               size="lg"

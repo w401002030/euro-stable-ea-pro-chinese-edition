@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const { open } = useCheckoutStore();
+  const open = useCheckoutStore((state) => state.open);
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -17,7 +17,7 @@ export function Navbar() {
   const navLinks = [
     { name: "性能", href: "#performance" },
     { name: "特性", href: "#features" },
-    { name: "价���", href: "#pricing" },
+    { name: "价格", href: "#pricing" },
     { name: "问答", href: "#faq" },
   ];
   return (

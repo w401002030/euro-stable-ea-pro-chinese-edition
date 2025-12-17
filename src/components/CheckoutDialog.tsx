@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
   const handleConfirm = () => {
-    toast.success("购买成��！", {
+    toast.success("购买成功！", {
       description: "感谢您的购买，相关许可信息已发送至您的邮箱。",
       icon: <CheckCircle className="h-5 w-5 text-emerald-500" />,
     });
@@ -38,9 +38,9 @@ export function CheckoutDialog() {
               {selectedPlan || "标准版 (默认)"}
             </p>
           </div>
-          <p className="text-xs text-muted-foreground text-center">
-            点��“确认购买”即表示您同意我们的���务条款。
-          </p>
+<p className="text-xs text-muted-foreground text-center">
+  点击“确认购买”即表示您同意我们的服务条款。
+</p>
         </div>
         <DialogFooter>
           <Button variant="outline" onClick={close}>

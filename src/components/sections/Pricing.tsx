@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 export function Pricing() {
-  const { open } = useCheckoutStore();
+  const open = useCheckoutStore((state) => state.open);
   return (
     <section id="pricing" className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +23,7 @@ export function Pricing() {
             选择适合您的方案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性���费，终身使用。无订阅，无隐藏费用。
+            一次性付费，终身使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -48,7 +48,7 @@ export function Pricing() {
                     <CardTitle>{plan.name}</CardTitle>
                     {plan.isRecommended && (
                       <Badge variant="default" className="bg-emerald-500">
-                        推��
+                        推荐
                       </Badge>
                     )}
                   </div>

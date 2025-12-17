@@ -33,23 +33,23 @@ export const features: {
 }[] = [
   {
     icon: ShieldCheck,
-    title: "极低���撤",
-    description: "先进的风险管理系统��将资金回撤控制在最低水平，保护您的资本安全。",
+    title: "极低回撤",
+    description: "先进的风险管理系统将资金回撤控制在最低水平，保护您的资本安全。",
   },
   {
     icon: Zap,
     title: "全自动策略",
-    description: "无需人工干预，EA 24/7 自动执行交易，捕���每一个市场机会。",
+    description: "无需人工干预，EA 24/7 自动执行交易，捕捉每一个市场机会。",
   },
   {
     icon: TrendingUp,
-    title: "稳定盈利曲��",
+    title: "稳定盈利曲线",
     description: "经过多年市场数据回测与实盘验证，展现出持续稳定的盈利能力。",
   },
   {
     icon: Clock,
     title: "24/7 技术支持",
-    description: "我们的���业团队随时为您服务，解答您遇到的任何问题。",
+    description: "我们的专业团队随时为您服务，解答您遇到的任何问题。",
   },
   {
     icon: BarChart,
@@ -58,8 +58,8 @@ export const features: {
   },
   {
     icon: LifeBuoy,
-    title: "终身免费更��",
-    description: "一次购买，即可享受所有���续策略优化和软件版本更新。",
+    title: "终身免费更新",
+    description: "一次购买，即可享受所有后续策略优化和软件版本更新。",
   },
 ];
 // Data for the pricing plans
@@ -83,7 +83,7 @@ export const pricingPlans = [
       "5个模拟账户许可",
       "终身免费更新",
       "优先技术支持",
-      "高级参��设置",
+      "高级参数设置",
     ],
     isRecommended: true,
   },
@@ -103,14 +103,14 @@ export const pricingPlans = [
 // Data for the FAQ section
 export const faqItems = [
   {
-    question: "什么��� EA (智能交易系统)？",
+    question: "什么是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是���种在 MetaTrader 平台上运行的自动化交易程序。它根据预设的交易策略自动执行买卖操作，无需人工干预。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的自动化交易程序。它根据预设的交易策略自动执行买卖操作，无需人工干预。",
   },
   {
-    question: "Euro Stable EA 的最低入金要求是多���？",
+    question: "Euro Stable EA 的最低入金要求是多少？",
     answer:
-      "我们建议最低入金为 1000 美元，以确保 EA 能��在安全的风险水平下有效运行。更低的资金也可以运行，但风险会相应增加。",
+      "我们建议最低入金为 1000 美元，以确保 EA 能够在安全的风险水平下有效运行。更低的资金也可以运行，但风险会相应增加。",
   },
   {
     question: "我需要一直开着电脑吗？",
@@ -120,7 +120,7 @@ export const faqItems = [
   {
     question: "安装和设置过程复杂吗？",
     answer:
-      "不复杂。我们提供非常��细的图文安装指南和视频教程。大多数用户可以在 15 分钟内完成所有设置。如果您遇到任何问题，���们的技术支持团队会帮助您。",
+      "不复杂。我们提供非常详细的图文安装指南和视频教程。大多数用户可以在 15 分钟内完成所有设置。如果您遇到任何问题，我们的技术支持团队会帮助您。",
   },
   {
     question: "购买后是否还有其他费用？",
@@ -133,13 +133,13 @@ export const statsData = [
   { icon: TrendingUp, label: "胜率", value: "92.3%" },
   { icon: DollarSign, label: "总盈利", value: "¥1,580,000+" },
   { icon: TrendingDown, label: "最大回撤", value: "仅 3.2%" },
-  { icon: Users, label: "活���用户", value: "12,847+" },
+  { icon: Users, label: "活跃用户", value: "12,847+" },
 ];
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变���我的交易生涯。稳定盈利，低回撤，完美！",
-    author: "��伟",
+    quote: "Euro Stable EA 彻底改变了我的交易生涯。稳定盈利，低回撤，完美！",
+    author: "张伟",
     role: "全职交易员",
   },
   {
@@ -148,7 +148,7 @@ export const testimonials = [
     role: "投资经理",
   },
   {
-    quote: "专业的团队，及时的���持。值得信赖的交易伙伴！",
+    quote: "专业的团队，及时的支持。值得信赖的交易伙伴！",
     author: "陈明",
     role: "外汇爱好者",
   },
