@@ -12,30 +12,29 @@ import {
 } from "lucide-react";
 // Mock data for the performance chart
 export const performanceData = [
-  // 2024年3月 – 2025年12月 (22 months)
+  // 2024年3月 – 2025年12月 (22 months) – smooth exponential growth with minor wiggles
   { name: "2024年3月", profit: 1000 },
-  { name: "2024年4月", profit: 1045 },
-  { name: "2024年5月", profit: 1112 },
-  { name: "2024年6月", profit: 1158 },
-  { name: "2024年7月", profit: 1277 },
-  { name: "2024年8月", profit: 1428 },
-  { name: "2024年9月", profit: 1616 },
-  { name: "2024年10月", profit: 1905 },
-  { name: "2024年11月", profit: 2316 },
-  { name: "2024年12月", profit: 2926 },
-  { name: "2025年1月", profit: 3869 },
-  { name: "2025年2月", profit: 5955 },
-  // Gradual growth with two subtle dips
-  { name: "2025年3月", profit: 8785 },
-  { name: "2025年4月", profit: 12924 },
-  { name: "2025年5月", profit: 12200 }, // dip (~5.6%)
-  { name: "2025年6月", profit: 17934 },
-  { name: "2025年7月", profit: 26474 },
-  { name: "2025年8月", profit: 24824 }, // dip (~6.3%)
-  { name: "2025年9月", profit: 36594 },
-  { name: "2025年10月", profit: 54024 },
-  { name: "2025年11月", profit: 79624 },
-  { name: "2025年12月", profit: 117803 },
+  { name: "2024年4月", profit: 1300 },
+  { name: "2024年5月", profit: 1690 },
+  { name: "2024年6月", profit: 2197 },
+  { name: "2024年7月", profit: 2856 },
+  { name: "2024年8月", profit: 3713 },
+  { name: "2024年9月", profit: 3660 }, // slight dip (~1.4%)
+  { name: "2024年10月", profit: 4758 },
+  { name: "2024年11月", profit: 6185 },
+  { name: "2024年12月", profit: 8041 },
+  { name: "2025年1月", profit: 10453 },
+  { name: "2025年2月", profit: 10300 }, // slight dip (~1.5%)
+  { name: "2025年3月", profit: 13390 },
+  { name: "2025年4月", profit: 17407 },
+  { name: "2025年5月", profit: 22629 },
+  { name: "2025年6月", profit: 29418 },
+  { name: "2025年7月", profit: 38243 },
+  { name: "2025年8月", profit: 49716 },
+  { name: "2025年9月", profit: 64631 },
+  { name: "2025年10月", profit: 84020 },
+  { name: "2025年11月", profit: 109226 },
+  { name: "2025年12月", profit: 117803 }, // exact required final value
 ];
 // Data for the key features section
 export const features: {
