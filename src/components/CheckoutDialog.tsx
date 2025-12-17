@@ -8,16 +8,26 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useCheckoutStore } from "@/hooks/useCheckoutStore";
-// Placeholder QR code image as a base64 data URI
-const qrCodeDataUri = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFkElEQVR4nO3dQY7jNhBAQeL9/7/cPaBIIbET27Zna1gYgSRI4gYgQc75/f39/f0BAH7y6gMAIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEIMgEALE2j3pAAAAAElFTkSuQmCC";
+/**
+ * CheckoutDialog – a simple contact modal.
+ *
+ * - Shows a title and description (optionally prefixed with the selected plan).
+ * - Provides phone and email contact details.
+ * - Uses primitive selectors from the checkout store.
+ * - No QR code image is rendered.
+ */
 export function CheckoutDialog() {
+  // Primitive selectors for store state
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "扫���加微信咨询方案详情或电话联系，微电同号。";
+  // Base description (fixed garbled text)
+  const baseDescription = "扫码加微信咨询方案详情或电话联系，微电同号。";
+  // Full description, optionally including the selected plan
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
+  // Early exit when the dialog is not open
   if (!isOpen) {
     return null;
   }
@@ -30,12 +40,14 @@ export function CheckoutDialog() {
             {descriptionText}
           </DialogDescription>
         </DialogHeader>
-        <div className="py-4 flex flex-col items-center justify-center space-y-6">
-          <img 
-            src={qrCodeDataUri} 
-            alt="WeChat QR Code" 
-            className="w-48 h-48 rounded-lg"
-          />
+        {/* Contact information */}
+        <div className="py-4 space-y-2">
+          <p className="text-center text-sm text-muted-foreground">
+            联系电话：+86 18666888095
+          </p>
+          <p className="text-center text-sm text-muted-foreground">
+            联系邮箱：673351805@qq.com
+          </p>
         </div>
         <DialogFooter>
           <Button variant="outline" onClick={close} className="w-full">
