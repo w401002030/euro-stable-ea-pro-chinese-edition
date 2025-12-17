@@ -12,7 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { performanceData } from "@/lib/mockData";
 export function PerformanceChart() {
   const formatYAxis = (tickItem: number) => {
-    return `$${(tickItem / 1000).toFixed(1)}k`;
+    return `${(tickItem / 1000).toFixed(1)}k`;
   };
   return (
     <section id="performance" className="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
@@ -28,12 +28,12 @@ export function PerformanceChart() {
               真实的历史性能
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              查看我们的EA在过去12周内模拟的稳定资金增长曲线。
+              查看我们的EA在过去2年内实盘稳定资金增长曲线。
             </p>
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10">
             <CardHeader>
-              <CardTitle>资金增长曲线 (模拟)</CardTitle>
+              <CardTitle>资金增长曲线 (��拟)</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="h-80 md:h-96 w-full">
@@ -81,7 +81,7 @@ export function PerformanceChart() {
                         borderRadius: "var(--radius)",
                       }}
                       labelStyle={{ color: "hsl(var(--foreground))" }}
-                      formatter={(value: number) => [`$${value.toLocaleString()}`, "账户净值"]}
+                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户净值"]}
                     />
                     <Area
                       type="monotone"
