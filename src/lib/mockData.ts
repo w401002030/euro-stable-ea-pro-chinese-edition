@@ -88,7 +88,7 @@ export const pricingPlans = [
     isRecommended: false,
   },
   {
-    name: "v3Pro",
+    name: "V3Pro",
     price: "$599",
     features: [
       "2个真实账户终身许可",
