@@ -30,7 +30,7 @@ export function Testimonials() {
               x: ["0%", "-50%"],
             }}
             transition={{
-              duration: 30,
+              duration: 90, // Slowed down from 30s to 90s for a more premium feel
               ease: "linear",
               repeat: Infinity,
             }}
