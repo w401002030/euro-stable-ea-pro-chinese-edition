@@ -24,7 +24,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢���来电咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
+  const baseDescription = "欢迎来电咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -35,7 +35,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴���！");
+      toast.success("已复制到剪贴板！");
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
@@ -73,9 +73,9 @@ export function CheckoutDialog() {
           {/* WeChat QR Code Section */}
           <div className="flex flex-col items-center gap-2">
             <div className="p-2 bg-white rounded-xl border shadow-sm">
-              <img 
-                src="https://placehold.co/200x200?text=WeChat+QR" 
-                alt="WeChat QR Code" 
+              <img
+                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码"
+                alt="WeChat QR Code"
                 className="w-40 h-40 object-cover rounded-lg"
               />
             </div>
@@ -83,7 +83,7 @@ export function CheckoutDialog() {
           </div>
           <div className="w-full space-y-3">
             <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
-              <span className="text-base text-muted-foreground shrink-0">联系电话��</span>
+              <span className="text-base text-muted-foreground shrink-0">联系电话：</span>
               <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
                 {phoneNum}
               </code>

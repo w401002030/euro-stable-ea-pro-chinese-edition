@@ -5,23 +5,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const steps = [
   {
     icon: UserPlus,
-    title: "1. 准���账户",
-    description: "在受监管的经纪���处开设 MT4 交易账户，建议使用 ECN 或低点差账户以获得最佳表现。",
+    title: "1. 准备账户",
+    description: "在受监管的经纪商处开设 MT4 交易账户，建议使用 ECN 或低点差账户以获得最佳表现。",
   },
   {
     icon: Download,
     title: "2. 下载软件",
-    description: "购买后，您将���到包含 EA 文件、安装手册和预设参数文件的下载链接。",
+    description: "购买后，您将收到包含 EA 文件、安装手册和预设参数文件的下载链接。",
   },
   {
     icon: Settings,
     title: "3. 加载 EA",
-    description: "将 EA 文件放入 MT4 专��目录，加载到指定的货币对图表，并导入我们提供的优化参数。",
+    description: "将 EA 文件放入 MT4 专家目录，加载到指定的货币对图表，并导入我们提供的优化参数。",
   },
   {
     icon: Play,
     title: "4. 开启交易",
-    description: "确保 MT4 的“自动交易”按钮已开启。EA 将开始全天候监��市场并自动执行策略。",
+    description: "确保 MT4 的“自动交易”按钮已开启。EA 将开始全天候监测市场并自动执行策略。",
   },
 ];
 export function OperationGuide() {
@@ -32,8 +32,8 @@ export function OperationGuide() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             操作说明
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            只需简单��个步骤，即可开启您的自动化交易之旅。
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            只需简单的四个步骤，即可开启您的自动化交易之旅。
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
