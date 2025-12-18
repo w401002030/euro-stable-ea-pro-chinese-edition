@@ -53,11 +53,8 @@ export function CheckoutDialog() {
   }, []);
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-        <DialogContent
-          className="max-w-[95vw] sm:max-w-md rounded-2xl"
-          aria-describedby="modal-desc"
-        >
-          <DialogDescription id="modal-desc" className="sr-only">
+        <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl">
+          <DialogDescription className="sr-only">
             {descriptionText}
           </DialogDescription>
           <DialogHeader>
