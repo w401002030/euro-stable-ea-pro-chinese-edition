@@ -67,8 +67,8 @@ export function PerformanceChart() {
             <CardHeader>
               <CardTitle>资金增长曲线</CardTitle>
             </CardHeader>
-            <CardContent className="max-w-4xl mx-auto h-[28rem] md:h-[32rem] lg:h-[36rem] p-0 pt-4">
-              <ResponsiveContainer width="100%" height="100%">
+            <CardContent className="max-w-4xl mx-auto h-64 md:h-80 lg:h-96 p-0 pt-4">
+              <ResponsiveContainer width="100%" height="100%" minHeight={400} aspect={2}>
                 <AreaChart
                   data={performanceData}
                   margin={{
