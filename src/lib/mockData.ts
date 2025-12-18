@@ -44,16 +44,16 @@ export const features: {
   {
     icon: Zap,
     title: "全自动智能交易",
-    description: "基于深度神经网络算法，24/7 自动识别市场趋势并执行交易，无需人工盯盘。",
+    description: "基于深度神经网络算法，24/7 自动识别市场趋势并执行交易，无需���工盯盘。",
   },
   {
     icon: TrendingUp,
     title: "复利增长模式",
-    description: "支持动态仓位管理，随账户余额增长自动调整手数，实现复利的指数级增长。",
+    description: "支持动态仓位管理，随账户余额增长自动调整手数，实现���利的指数级增长。",
   },
   {
     icon: BarChart,
-    title: "主流货币对适配",
+    title: "主流货币对适���",
     description: "完美适配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系统性风险。",
   },
   {
@@ -69,7 +69,7 @@ export const features: {
   {
     icon: Clock,
     title: "专业技术支持",
-    description: "提供一对一远程安装指导与策略优化建议，确保每一位用户都能顺利开启交易。",
+    description: "提供一对一远程安装指���与策略优化建议，确保每一位用户都能顺利开启交易。",
   },
 ];
 // Data for the pricing plans
@@ -100,14 +100,14 @@ export const pricingPlans = [
   },
   {
     name: "V4.beta 旗舰版",
-    price: "即将推出",
+    price: "即将��出",
     features: [
       "3个真实账户终身许可",
       "无限模拟账户许可",
-      "全天候专业技术咨询",
-      "独家 Beta 策略访问权",
+      "全天���专业技术咨询",
+      "独家 Beta 策略访问���",
       "建议初始资金：10000美元+",
-      "低延迟专用服务器支持",
+      "低延迟专用服务���支持",
     ],
     isRecommended: false,
   },
@@ -117,12 +117,12 @@ export const faqItems = [
   {
     question: "MT4是什么？",
     answer:
-      "MT4 (MetaTrader 4) 是全球最流行的外汇交易平台，支持 EA 自动交易，提供图表分析与下单管理和一键交易等功能。",
+      "MT4 (MetaTrader 4) 是全球最流行的外汇交易平台，支持 EA 自动交易，���供图表分析与下单管理和一键交易等功能。",
   },
   {
     question: "什么是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程序，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
+      "EA (Expert Advisor) 是一种��� MetaTrader 平台上运行的全自动交易程序，它根据预设的逻辑自动执行买卖���作，消除了情绪干扰，实现 24 小时不间断交易。",
   },
   {
     question: "Euro Stable EA 的最低资金要求是多少？",
@@ -132,22 +132,22 @@ export const faqItems = [
   {
     question: "我需要一直保持电脑开启吗？",
     answer:
-      "是的，EA 需要 MT4 平台持续在线，我们提供部署 VPS (虚拟专用服务器) 的教程，它可以让您的交易环境在云端 24/7 稳定运行，不受本地断网或断电影响。",
+      "是的，EA 需要 MT4 平台持���在线，我们提供部署 VPS (虚拟专用服务器) 的教程，它可��让您的交易环境在云端 24/7 稳定运行，不受本地断网或断���影响。",
   },
   {
     question: "安装和设置过程复杂吗？",
     answer:
-      "非常简单。我们提供详细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
+      "非常���单。我们提供详细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
   },
   {
     question: "购买后是否还有后续续费费用？",
     answer:
-      "没有。您购买的是终身授权许可。所有未来的策略优化、参数更新和软件升级均对所有客户免费开放。",
+      "没有。您购买的是终身���权许可。所有未来的策略优化、参数更新和软件升级均对所有客户免费开放。",
   },
   {
     question: "24小时免费热线",
     answer:
-      "请使用页面联系方式咨询：电话 +86 18666888095 / (719) 524-8014, 邮箱 673351805@qq.com, 客服24小时在线。",
+      "请使用页面联系���式咨询：电话 +86 18666888095 / (719) 524-8014, 邮箱 673351805@qq.com, 客服24小时在线。",
   },
 ];
 // Data for the stats ticker
@@ -160,7 +160,7 @@ export const statsData = [
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变了我的投资方式. 它的稳定性令人印象深刻，回撤控制得非常好。",
+    quote: "Euro Stable EA 彻底改变了我的投资方式。它的稳定��令人印象深刻，回撤控制得非常好。",
     author: "Alex Johnson",
     role: "Full-time Trader",
   },
@@ -175,7 +175,7 @@ export const testimonials = [
     role: "Forex Enthusiast",
   },
   {
-    quote: "该系统的风控逻辑非常严密，特别是在回撤管理上，体现了极高的专业水平，是长期资产配置的理想选择。",
+    quote: "该系统的风控逻辑非常严密，���别是在回撤管理上，体现了极高的专业水平，是长期资产配置的理���选择。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
@@ -185,7 +185,7 @@ export const testimonials = [
     role: "Senior Trader",
   },
   {
-    quote: "刚开始接触外汇非常茫然，感谢技术团队的一对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
+    quote: "刚开始接触外汇非常茫然，感谢技术团队的��对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
     author: "Olivia Kim",
     role: "Novice Investor",
   },
@@ -195,7 +195,7 @@ export const testimonials = [
     role: "Institutional Analyst",
   },
   {
-    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻后的重大损失，值得信赖。",
+    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻后���重大损失，值得信赖。",
     author: "Lily Wang",
     role: "Business Owner",
   },
@@ -215,12 +215,12 @@ export const testimonials = [
     role: "Private Investor",
   },
   {
-    quote: "多品种对冲策略让投资更安心，资金曲线非常漂亮，强烈推荐给朋友。",
+    quote: "多品种对冲策略让投资更安���，资金曲线非常漂亮，强烈推���给朋友。",
     author: "Sarah Thompson",
     role: "Financial Analyst",
   },
   {
-    quote: "技术团队响应很快，遇到问题都能及时解决。这个EA真正实现了稳定盈利。",
+    quote: "技术团队响应很快，遇到��题都能及时解决。这个EA真正实现了稳定盈利。",
     author: "Kevin Anderson",
     role: "Freelancer",
   },

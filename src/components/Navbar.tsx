@@ -17,7 +17,7 @@ export function Navbar() {
   const navLinks = [
     { name: "战绩", href: "#performance" },
     { name: "特性", href: "#features" },
-    { name: "���格", href: "#pricing" },
+    { name: "价格", href: "#pricing" },
     { name: "操作说明", href: "#operation" },
     { name: "常见问题", href: "#faq" },
   ];
