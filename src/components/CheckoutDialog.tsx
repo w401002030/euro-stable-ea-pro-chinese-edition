@@ -48,7 +48,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制���败，请手动选择复制");
+        toast.error("复制失败，请手动选择复制");
       }
     }
   }, []);
@@ -72,8 +72,8 @@ export function CheckoutDialog() {
             >
               <img
                 src="/wechat-qr.png"
-                alt="扫��二维码加微信"
-                title="扫此二维码加微信"
+                alt="扫码二维码加微信"
+                title="扫码二维码加微信"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = "https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码";
