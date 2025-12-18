@@ -2,9 +2,9 @@ import {
   ShieldCheck,
   Zap,
   TrendingUp,
-  Clock,
   BarChart,
   LifeBuoy,
+  Clock,
   DollarSign,
   TrendingDown,
   Users,
@@ -35,7 +35,7 @@ export const performanceData = [
   { name: "2025年11月", profit: 109226 },
   { name: "2025年12月", profit: 117803 },
 ];
-// Data for the key features section - Reordered per client feedback
+// Data for the key features section
 export const features: {
   icon: LucideIcon;
   title: string;
@@ -44,17 +44,17 @@ export const features: {
   {
     icon: Zap,
     title: "全���动智能交易",
-    description: "基于��经网络算法，24/7 自动识别市场趋势并执行交易，无需人工盯盘。",
+    description: "基于神经网络算法，24/7 自动识别市场趋势并执行交易，无需人工盯盘。",
   },
   {
     icon: TrendingUp,
     title: "复利增长模式",
-    description: "支��动态仓位管理，随账户余额增长自动调整手数，实现复利的指数级增长。",
+    description: "支持动���仓位管理，随账户余额增长自动调整手数，实现复利的指数级增长。",
   },
   {
     icon: BarChart,
     title: "多品种对冲策略",
-    description: "���美适配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系统性风险。",
+    description: "完���适配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系��性风险。",
   },
   {
     icon: LifeBuoy,
@@ -105,7 +105,7 @@ export const pricingPlans = [
     price: "即将推出",
     features: [
       "3个真实账户终身许可",
-      "无限模拟账户许可",
+      "��限模拟账户许可",
       "全天候专业技术咨询",
       "独家 Beta 策略访问权",
       "建议初始资金：10000美元+",
@@ -117,24 +117,24 @@ export const pricingPlans = [
 // Data for the FAQ section
 export const faqItems = [
   {
-    question: "什么是 EA (智能交易系统)？",
+    question: "什���是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程序，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程序，它根据预设的逻辑自动���行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
   },
   {
-    question: "Euro Stable EA 的最低资金要求是多少？",
+    question: "Euro Stable EA 的��低资金要求是多少？",
     answer:
       "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 100 美元即可开始运行，以确保有足够的保证金应对市场波动。",
   },
   {
-    question: "我需要一直保持���脑开启吗？",
+    question: "我需要一直保持电脑开启吗？",
     answer:
-      "是的，EA 需要 MT4 平台持���在线。我们强烈建议使用 VPS (虚拟专用服务器)，它可以让您的交易环��在云端 24/7 稳定运行，不受本地断网或断电影响。",
+      "是的，EA 需要 MT4 平台持���在线。我们强烈建议使用 VPS (虚拟专用服务器)，它可以让您的交易环境在云端 24/7 稳定运行，不受本地断网或断电影响。",
   },
   {
     question: "安装和设置过程复杂吗？",
     answer:
-      "非常简单。我们提供���细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
+      "非常简单。我们提供详��的中文图文手册和视频教程。通常只需 10-15 分钟即可完��设置。我们的技术团队也提供远程协助服务。",
   },
   {
     question: "购买后是否有后续续费费用？",
@@ -157,7 +157,7 @@ export const testimonials = [
     role: "Full-time Trader",
   },
   {
-    quote: "作为一名投资经理，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预期。",
+    quote: "作为一名投资经理，我���直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预期。",
     author: "Sophia Lee",
     role: "Asset Manager",
   },
@@ -167,27 +167,27 @@ export const testimonials = [
     role: "Forex Enthusiast",
   },
   {
-    quote: "该系统的风控逻辑非常严密，���其是在回撤管理上，展现了极高的专业水平，是长期资产配置的理���选择。",
+    quote: "该系统的风控逻辑非常严密，���其是在回撤管理上，展现了极高的专业水平，是长期资产配置的理��选择。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
   {
-    quote: "在多年高波动极端行情中，EA的新闻过滤系统表现完美，成功规避了极端风险，��种稳定性在市面上非常罕见。",
+    quote: "在多年高波动极端行情���，EA的新闻过滤系统表现完美，成功规避了极端风险，��种稳定性在市面上非常罕见。",
     author: "David Park",
     role: "Senior Trader",
   },
   {
-    quote: "刚开始���触外汇非常茫然，感谢技术团队的一对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
+    quote: "刚开始接触外汇非常茫然，感谢技术团队的一对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
     author: "Olivia Kim",
     role: "Novice Investor",
   },
   {
-    quote: "从量化分析的角度看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的光滑度令人惊叹。",
+    quote: "从量化分析的角��看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的光滑度令人惊叹。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
   {
-    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻后的损失，��得信赖。",
+    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻后的损失，值得信赖。",
     author: "Lily Wang",
     role: "Business Owner",
   },
@@ -197,7 +197,7 @@ export const testimonials = [
     role: "Retail Investor",
   },
   {
-    quote: "对比其他EA，这个���统的回撤控制确实名不虚传，睡眠也能赚钱的感觉真好。",
+    quote: "对比其他EA，这个系统的回撤控制确实名不虚传，睡眠也能赚钱的感觉真好。",
     author: "Grace Huang",
     role: "Software Engineer",
   },
@@ -207,7 +207,7 @@ export const testimonials = [
     role: "Private Investor",
   },
   {
-    quote: "多品种对冲策略让投资更加安全，资金曲线非常漂亮，强烈推���给朋友。",
+    quote: "多品种对冲策略让投资更加安全，资金曲线非常漂��，强烈推荐给朋友。",
     author: "Sarah Thompson",
     role: "Financial Analyst",
   },

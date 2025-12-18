@@ -15,9 +15,9 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "��迎电话咨询详细方案或WeChat联系，微信电话同号码，��线时间：am10:00-pm17:00";
+  const baseDescription = "欢迎电话咨询详细方案或WeChat联系，���信电话同号码，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
-    ? `您���我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
+    ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
@@ -64,7 +64,7 @@ export function CheckoutDialog() {
           <div className="flex flex-col items-center gap-3">
             <div className="p-3 bg-white rounded-2xl border-2 border-emerald-100 shadow-md dark:border-emerald-900/30">
               <img
-                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码"
+                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维���"
                 alt="微信二维码"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
               />

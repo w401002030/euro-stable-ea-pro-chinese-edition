@@ -16,13 +16,13 @@ export function Hero() {
           className="text-center"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 text-balance">
-            <span className="block">稳定盈利的全自动外汇交易新纪元</span>
+            <span className="block">稳定盈利的全自动外汇交易新��元</span>
             <span className="block text-emerald-500 mt-2">
               Euro Stable EA 专业版
             </span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300 text-pretty">
-            释放您的交易���力。我们的智能交易系统 (EA) 采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
+            释��您的交易潜力。我们的智能交易系统 (EA) 采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button
@@ -30,7 +30,7 @@ export function Hero() {
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              立即���取
+              立即获取
             </Button>
             <Button
               size="lg"
