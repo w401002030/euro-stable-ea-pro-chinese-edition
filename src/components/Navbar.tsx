@@ -17,8 +17,9 @@ export function Navbar() {
   const navLinks = [
     { name: "性能", href: "#performance" },
     { name: "特性", href: "#features" },
+    { name: "操作说明", href: "#operation" },
     { name: "价格", href: "#pricing" },
-    { name: "问答", href: "#faq" },
+    { name: "问���", href: "#faq" },
   ];
   return (
     <motion.header
@@ -71,7 +72,7 @@ export function Navbar() {
           </div>
           <div className="flex items-center space-x-2">
             <ThemeToggle className="relative top-0 right-0" />
-            <Button 
+            <Button
               onClick={() => open()}
               className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white"
             >

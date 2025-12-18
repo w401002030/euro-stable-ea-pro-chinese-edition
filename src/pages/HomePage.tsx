@@ -9,6 +9,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { StatsTicker } from "@/components/sections/StatsTicker";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CheckoutDialog } from "@/components/CheckoutDialog";
+import { OperationGuide } from "@/components/sections/OperationGuide";
 export function HomePage() {
   return (
     <div className="bg-background text-foreground">
@@ -20,6 +21,7 @@ export function HomePage() {
         <StatsTicker />
         <Pricing />
         <FAQ />
+        <OperationGuide />
         <Testimonials />
       </main>
       <Footer />
