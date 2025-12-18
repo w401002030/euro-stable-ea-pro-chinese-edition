@@ -43,13 +43,13 @@ export const features: {
 }[] = [
   {
     icon: ShieldCheck,
-    title: "超低回撤控制",
+    title: "超低���撤控制",
     description: "部署多重风控算法，严格控制每笔交易风险，确保账户回撤始终处于可控范围。",
   },
   {
     icon: Zap,
     title: "全自动智能交易",
-    description: "基于神经网络算法，24/7 自动识别市场趋��并执行交易，无需人工盯盘。",
+    description: "基于神��网络算法，24/7 自动识别市场趋势并执行交易，无需人工盯盘。",
   },
   {
     icon: TrendingUp,
@@ -59,26 +59,26 @@ export const features: {
   {
     icon: Clock,
     title: "专业技术支持",
-    description: "提供一对一远程安装指导与��略优化建议，确保每一位用户都能顺利开启交易。",
+    description: "提供一对一远程安装指导与策略优化建议，确保每一位用户都能顺利开启交易。",
   },
   {
     icon: BarChart,
     title: "多品种对冲策略",
-    description: "完美匹配 EURUSD, GBPUSD 等主流���币对，通过多品种分散投资降低系统性风险。",
+    description: "完美��配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系统性风险。",
   },
   {
     icon: LifeBuoy,
-    title: "智能新闻过���",
-    description: "自动识别高影响财经数��发布时间，在极端波动行情前自动规避，保护本金安全。",
+    title: "智能新闻过滤",
+    description: "自动识别���影响财经数据发布时间，在极端波动行情前自动规避，保护本本金安全。",
   },
 ];
 // Data for the pricing plans
 export const pricingPlans = [
   {
-    name: "v2.3 标准版",
+    name: "v2.3 标���版",
     price: "$299",
     features: [
-      "1个真实账户终身���可",
+      "1个真实账户终身许可",
       "2个模拟账户许可",
       "标准技术支持",
       "建议初始资金：500美元 (美分账户)",
@@ -93,7 +93,7 @@ export const pricingPlans = [
       "2个真实账户终身许可",
       "5个模拟账户许可",
       "终身免费版本更新",
-      "优先技术支持响应",
+      "优��技术支持响应",
       "高级新闻过滤系统",
       "建议初始资金：1000美元 (美分账户)",
       "赠送 1个月 高性能 VPS",
@@ -102,14 +102,14 @@ export const pricingPlans = [
   },
   {
     name: "V4.beta 旗舰版",
-    price: "即将推出",
+    price: "即���推出",
     features: [
       "3个真实账户终身许可",
       "无限模拟账户许可",
       "全天候专业技术咨询",
-      "独家 Beta 策略访问��",
+      "��家 Beta 策略访问权",
       "建议初始资金：10000美元+",
-      "低延迟专用服务器支持",
+      "低延迟专用���务器支持",
     ],
     isRecommended: false,
   },
@@ -119,12 +119,12 @@ export const faqItems = [
   {
     question: "什么是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易��序，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程序，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
   },
   {
-    question: "Euro Stable EA 的最低资金要求是多��？",
+    question: "Euro Stable EA 的最低资金要求是多少？",
     answer:
-      "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 100 美元即可开始运行，以确保有���够的保证金应对市场波动。",
+      "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 100 美元即���开始运行，以确保有足够的保证金应对市场波动。",
   },
   {
     question: "我需要一直保持电脑开启吗？",
@@ -134,12 +134,12 @@ export const faqItems = [
   {
     question: "安装和设置过程复杂吗？",
     answer:
-      "非常简单。我们提供详细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
+      "非常简单。我们提供��细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
   },
   {
     question: "购买后是否有后续续费费用？",
     answer:
-      "没有。您购买的���终身授权许可。所有未来的策略优化、参数更新和软件升级均对现有客户免费开放。",
+      "没有。您购买的是终身授权许可。��有未来的策略优化、参数更新和软件升级均对现有客户免费开放。",
   },
 ];
 // Data for the stats ticker
@@ -152,47 +152,47 @@ export const statsData = [
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变了我的投资方式。它的稳定性令人印象深刻，回撤控制得非常好。",
+    quote: "Euro Stable EA ��底改变了我的投资方式。它的���定性令人印象深刻，回撤控制得非常好。",
     author: "Alex Johnson",
     role: "Full-time Trader",
   },
   {
-    quote: "作为一名投资经���，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预���。",
+    quote: "���为一名投资经理，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预期。",
     author: "Sophia Lee",
     role: "Asset Manager",
   },
   {
-    quote: "客服团队非常专业，��装过程很顺利。运行两个月以来，收益非常稳定。",
+    quote: "客服团队非常专业，安装过程很顺利。运行两个月以来，收益非常稳定。",
     author: "Michael Chen",
     role: "Forex Enthusiast",
   },
   {
-    quote: "该系统的风控逻辑非常严密，尤其是在回撤管理上，展现了极高的专业水��，是长期资产配置的理想选择。",
+    quote: "该系统的风控逻辑非常严密，尤其是在回撤管理上，展现了极高的专业水平，是长期资产配置的理想选���。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
   {
-    quote: "在多年高波动极端行情中，EA的新闻过滤系统表现完美，��功规避了极端风险，这种稳定性在市面上非常罕见。",
+    quote: "在多年高波动极端行情���，EA的新闻过滤系统表现完美，成功规避了极端风险，这种稳定性在市面上非常罕见。",
     author: "David Park",
     role: "Senior Trader",
   },
   {
-    quote: "刚开始接触外汇非常��然，感谢技术团队的一对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
+    quote: "刚开始接���外汇非常茫然，感谢技术团队的一对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
     author: "Olivia Kim",
     role: "Novice Investor",
   },
   {
-    quote: "从量化分析的���度看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的平滑度令人惊叹。",
+    quote: "从量化分析的角度看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的���滑度令人惊叹。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
   {
-    quote: "这个EA的新闻过滤功能特别出��，避免了多次重大新闻时的损失，值得信赖。",
+    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻���的损失，值得信赖。",
     author: "Lily Wang",
     role: "Business Owner",
   },
   {
-    quote: "从安装到运行全程支持到位，策略参数也很适合小资金账户，收益很可观。",
+    quote: "从安装到运行全程支持到位，策略参数也很适合小资金���户，收益很可观。",
     author: "Ethan Liu",
     role: "Retail Investor",
   },
@@ -202,12 +202,12 @@ export const testimonials = [
     role: "Software Engineer",
   },
   {
-    quote: "V3Pro专业版的VPS赠送服务很���心，运行一年多，月均收益稳定在15%以上。",
+    quote: "V3Pro专业版的VPS赠送服务很贴心，运行一年多，月均收益稳定在15%以上。",
     author: "James Miller",
     role: "Private Investor",
   },
   {
-    quote: "多品种对冲策略让投资更加安全，资金曲线非常漂亮，强烈推荐给朋友。",
+    quote: "���品种对冲策略让投资更加安全，资金曲线非常漂���，强烈推荐给朋友。",
     author: "Sarah Thompson",
     role: "Financial Analyst",
   },
