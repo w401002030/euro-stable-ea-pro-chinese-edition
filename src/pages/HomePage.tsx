@@ -17,8 +17,8 @@ export function HomePage() {
       <main>
         <Hero />
         <PerformanceChart />
-        <Features />
         <StatsTicker />
+        <Features />
         <Pricing />
         <OperationGuide />
         <FAQ />

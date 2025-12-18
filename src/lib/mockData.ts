@@ -43,17 +43,17 @@ export const features: {
 }[] = [
   {
     icon: Zap,
-    title: "全自动智���交易",
-    description: "基于神经网络算法，24/7 自动识别市场趋��并执行交易，无需人工盯盘。",
+    title: "全自动智能交易",
+    description: "基于神经网络算法，24/7 自动识别市场趋势并执行交易，无需人工盯盘。",
   },
   {
     icon: TrendingUp,
-    title: "复利增长��式",
-    description: "支持动态仓位管理，随账户��额增长自动调整手数，实现复利的指数级增长。",
+    title: "复利增长模式",
+    description: "支持动态仓位管���，随账户余额增长自动调整手数，实现复利的指数级增长。",
   },
   {
     icon: BarChart,
-    title: "完美适配策���",
+    title: "完美适配��略",
     description: "完美适配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系统性风险。",
   },
   {
@@ -63,13 +63,13 @@ export const features: {
   },
   {
     icon: ShieldCheck,
-    title: "超低回撤���制",
-    description: "部署多重风控算法，��格控制每笔交易风险，确保账户回撤始终处于可控范围。",
+    title: "超低��撤控制",
+    description: "部署多重风控算法，严格控制每笔交易风险，确保账户回撤始终处于可控范���。",
   },
   {
     icon: Clock,
-    title: "专���技术支持",
-    description: "提供一对一远程安装指导与策略优化建议，确保每一位用户都能顺利开启交易。",
+    title: "专业技术支持",
+    description: "提��一对一远程安装指导与策略优化建议，确保每一位用户都能顺利开启交易。",
   },
 ];
 // Data for the pricing plans
@@ -78,10 +78,10 @@ export const pricingPlans = [
     name: "v2.3 标准版",
     price: "$299",
     features: [
-      "1个真实账户终身���可",
+      "1个真实账户终身许可",
       "2个模拟账户许可",
       "标准技术支持",
-      "建议初始资金：500美元 (美分账户)",
+      "建议初始资金���500美元 (美分账户)",
       "免费 VPS 云端挂载教程",
     ],
     isRecommended: false,
@@ -93,7 +93,7 @@ export const pricingPlans = [
       "2个真实账户终身许可",
       "5个模拟账户许可",
       "终身免费版本更新",
-      "优先技术支持响应",
+      "优��技术支持响应",
       "高级新闻过滤系统",
       "建议初始资金：1000美元 (美分账户)",
       "赠送 1个月 高性能 VPS",
@@ -102,14 +102,14 @@ export const pricingPlans = [
   },
   {
     name: "V4.beta 旗舰版",
-    price: "即将推出",
+    price: "即将���出",
     features: [
       "3个真实账户终身许可",
       "无限模拟账户许可",
-      "全天候专业技术���询",
-      "独家 Beta 策略访问��",
+      "全天候专业技术咨询",
+      "独家 Beta 策略��问权",
       "建议初始资金：10000美元+",
-      "低延迟专用服务器支持",
+      "低延迟专用服���器支持",
     ],
     isRecommended: false,
   },
@@ -117,36 +117,36 @@ export const pricingPlans = [
 // Data for the FAQ section
 export const faqItems = [
   {
-    question: "什么是 EA (智能交易系统)？",
+    question: "什么是 EA (智能交易系统)��",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易��序，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程序，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
   },
   {
-    question: "Euro Stable EA 的最低资金要求是多��？",
+    question: "Euro Stable EA 的最低资金���求是多少？",
     answer:
-      "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 100 美元即可开始运行，以确保有���够的保证金应对市场波动。",
+      "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 100 美元即可开始运行，以确保���足够保证金应对市场波动。",
   },
   {
-    question: "我需要一直保持电脑开启吗？",
+    question: "我需要一直保持���脑开启吗？",
     answer:
-      "是的，EA 需要 MT4 平台持续在线。我们强烈建议使用 VPS (虚拟专用服务器)，它可以让您的交易环境在云端 24/7 稳定运行，不受本地断网或断电影响。",
+      "是的，EA 需要 MT4 平台持续在线。我们强烈建议使用 VPS (虚拟专用服务器)，它可以让您的交易环境在云端 24/7 稳定运行，不受本��断网或断电影响。",
   },
   {
-    question: "安装和设置过程复杂吗？",
+    question: "安装和设置过程复��吗？",
     answer:
-      "非常简单。我们提供详细的中文图文手册和视��教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
+      "非常简单。我们提供详细的中文图文���册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程��助服务。",
   },
   {
-    question: "购买后是否有后续续费费用？",
+    question: "购买后是否还有后续续费费用？",
     answer:
-      "没有。您购买的���终身授权许可。所有未来的策略优化、参数更新和软件升级���对现有客户免费开放。",
+      "���有。您购买的是终身授权许可。所有未来的策略优化、参数更新和软件升级均对现有客户免费开放。",
   },
 ];
 // Data for the stats ticker
 export const statsData = [
   { icon: TrendingUp, label: "平均胜率", value: "85.3%" },
   { icon: DollarSign, label: "累计盈利", value: "$228k+" },
-  { icon: TrendingDown, label: "历史最大回撤", value: "15.2%" },
+  { icon: TrendingDown, label: "历史���大回撤", value: "15.2%" },
   { icon: Users, label: "全球活跃用户", value: "12,847" },
 ];
 // Data for testimonials
@@ -157,7 +157,7 @@ export const testimonials = [
     role: "Full-time Trader",
   },
   {
-    quote: "作为一名投资经理，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预期。",
+    quote: "作为一名投资经理，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预���。",
     author: "Sophia Lee",
     role: "Asset Manager",
   },
@@ -167,7 +167,7 @@ export const testimonials = [
     role: "Forex Enthusiast",
   },
   {
-    quote: "该系统的风控逻辑非常严密，���其是在回撤管理上，体现了极高的专业水平，是长期资产配置的理想选择。",
+    quote: "该系统的风控逻辑非常严密，���其是在回撤管理上，体现了极高���专业水平，是长期资产配置的理想选择。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
@@ -177,12 +177,12 @@ export const testimonials = [
     role: "Senior Trader",
   },
   {
-    quote: "刚开始接触外汇非常茫然，感谢技术团队的一对一远程安装服务，非常有耐心，让我这种新手也能轻松上手。",
+    quote: "刚开始接触外汇非常茫然，感谢技术团队的一对一远程安装服务，非常有耐心，��我这种新手也能轻松上手。",
     author: "Olivia Kim",
     role: "Novice Investor",
   },
   {
-    quote: "从量化分析的角���看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的光滑度令人惊叹。",
+    quote: "从量化分析的角度看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的光滑度令人惊叹。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
@@ -207,12 +207,12 @@ export const testimonials = [
     role: "Private Investor",
   },
   {
-    quote: "多品种对冲策略让投资更加安全，资金曲线非常漂亮，强烈推荐给朋友。",
+    quote: "多品种对冲策略让投资更��安全，资金曲线非常漂亮，强烈推荐给朋友。",
     author: "Sarah Thompson",
     role: "Financial Analyst",
   },
   {
-    quote: "技术团队响应很快，遇到问��都能及时解决。这个EA真正实现了稳定盈利。",
+    quote: "技术团队响应很快，遇到问题都能及时解决。这个EA真正实现了稳定盈利。",
     author: "Kevin Anderson",
     role: "Freelancer",
   },
