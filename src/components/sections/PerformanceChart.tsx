@@ -31,11 +31,11 @@ export function PerformanceChart() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              真实的历史战绩
+              真���的历史战绩
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground">
-                查看我们的EA从小资金开启的稳定��长曲线。
+                查看我们的EA从小资金开启的稳定增长���线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
                 并��受复利带来的魅力
