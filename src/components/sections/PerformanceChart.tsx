@@ -33,26 +33,26 @@ export function PerformanceChart() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               真实的历史性能
             </h2>
-<p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-  查看我们的EA从小资金开启的稳定增长曲线，并感受
-  <span
-    className="font-bold"
-    style={{
-      background:
-        "linear-gradient(90deg, #10B981 0%, #F59E0B 20%, #FCD34D 40%, #FBBF24 55%, #EF4444 75%, #EC4899 100%)",
-      WebkitBackgroundClip: "text",
-      backgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-      textShadow:
-        "0 0 10px rgba(16,185,129,0.6), 0 0 20px rgba(245,158,11,0.5), 0 0 30px rgba(239,68,68,0.4), 0 0 40px rgba(236,72,153,0.3)",
-      filter:
-        "drop-shadow(0 0 12px rgba(255,255,255,0.4)) drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
-    }}
-  >
-    复利
-  </span>
-  带来的魅力
-</p>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              查看我们的EA从���资金开启的稳定增长曲线，并感受
+              <span
+                className="font-bold"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #10B981 0%, #F59E0B 20%, #FCD34D 40%, #FBBF24 55%, #EF4444 75%, #EC4899 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  textShadow:
+                    "0 0 10px rgba(16,185,129,0.6), 0 0 20px rgba(245,158,11,0.5), 0 0 30px rgba(239,68,68,0.4), 0 0 40px rgba(236,72,153,0.3)",
+                  filter:
+                    "drop-shadow(0 0 12px rgba(255,255,255,0.4)) drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
+                }}
+              >
+                复利
+              </span>
+              带来��魅力
+            </p>
             <div className="flex justify-center mt-8">
               <Button
                 size="lg"
@@ -63,71 +63,79 @@ export function PerformanceChart() {
               </Button>
             </div>
           </div>
-          <Card className="shadow-xl dark:shadow-emerald-500/10">
+          <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden">
             <CardHeader>
-              <CardTitle>资金增长曲线</CardTitle>
+              <CardTitle>资金增长曲线 (USD)</CardTitle>
             </CardHeader>
-            <CardContent className="max-w-4xl mx-auto h-64 md:h-80 lg:h-96 p-0 pt-4">
-              <ResponsiveContainer width="100%" height="100%" minHeight={400} aspect={2}>
-                <AreaChart
-                  data={performanceData}
-                  margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                  }}
-                >
-                  <defs>
-                    <linearGradient id="profitFill" x1="0" y1="0" x2="0" y2="1">
-                      <stop
-                        offset="0%"
-                        stopColor="#10B981"
-                        stopOpacity={0.8}
-                      />
-                      <stop
-                        offset="100%"
-                        stopColor="#10B981"
-                        stopOpacity={0}
-                      />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid
-                    vertical={false}
-                    strokeDasharray="3 3"
-                    stroke="hsl(var(--muted))"
-                  />
-                  <XAxis
-                    dataKey="name"
-                    tickLine={false}
-                    axisLine={false}
-                    tickMargin={8}
-                    fontSize={14}
-                  />
-                  <YAxis
-                    tickLine={false}
-                    axisLine={false}
-                    tickMargin={8}
-                    fontSize={14}
-                    domain={['dataMin - 50', 'dataMax + 50']}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      background: "hsl(var(--card))",
-                      border: "1px solid hsl(var(--border))",
-                      borderRadius: "var(--radius)",
+            <CardContent className="p-0 pt-4">
+              <div className="h-[400px] md:h-[500px] w-full min-h-[400px]">
+                <ResponsiveContainer width="100%" height="100%">
+                  <AreaChart
+                    data={performanceData}
+                    margin={{
+                      top: 10,
+                      right: 10,
+                      left: 0,
+                      bottom: 0,
                     }}
-                    cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
-                  />
-                  <Area
-                    type="monotone"
-                    dataKey="profit"
-                    stroke="#10B981"
-                    strokeWidth={3}
-                    fill="url(#profitFill)"
-                  />
-                </AreaChart>
-              </ResponsiveContainer>
+                  >
+                    <defs>
+                      <linearGradient id="profitFill" x1="0" y1="0" x2="0" y2="1">
+                        <stop
+                          offset="0%"
+                          stopColor="#10B981"
+                          stopOpacity={0.8}
+                        />
+                        <stop
+                          offset="100%"
+                          stopColor="#10B981"
+                          stopOpacity={0}
+                        />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid
+                      vertical={false}
+                      strokeDasharray="3 3"
+                      stroke="hsl(var(--muted))"
+                    />
+                    <XAxis
+                      dataKey="name"
+                      tickLine={false}
+                      axisLine={false}
+                      tickMargin={12}
+                      fontSize={12}
+                      interval="preserveStartEnd"
+                      minTickGap={30}
+                    />
+                    <YAxis
+                      tickLine={false}
+                      axisLine={false}
+                      tickMargin={12}
+                      fontSize={12}
+                      domain={['auto', 'auto']}
+                      tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        background: "hsl(var(--card))",
+                        border: "1px solid hsl(var(--border))",
+                        borderRadius: "var(--radius)",
+                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+                      }}
+                      formatter={(value: number) => [`$${value.toLocaleString()}`, "账户余额"]}
+                      cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
+                    />
+                    <Area
+                      type="monotone"
+                      dataKey="profit"
+                      stroke="#10B981"
+                      strokeWidth={3}
+                      fill="url(#profitFill)"
+                      animationDuration={2000}
+                    />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </div>
             </CardContent>
           </Card>
         </motion.div>
