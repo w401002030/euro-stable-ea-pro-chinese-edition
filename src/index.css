@@ -113,13 +113,13 @@
     text-wrap: pretty;
   }
   /* Specialized Golden Glow for Performance Highlights */
+  /* Fixed: Removed text-shadow which conflicts with background-clip: text */
   .text-golden-glow {
     background-image: linear-gradient(90deg, #FCD34D 0%, #FBBF24 40%, #F59E0B 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 15px rgba(252,211,77,0.8), 0 0 25px rgba(251,191,36,0.6), 0 0 35px rgba(245,158,11,0.4);
-    filter: drop-shadow(0 0 8px rgba(252,211,77,0.7));
+    filter: drop-shadow(0 0 8px rgba(252,211,77,0.7)) drop-shadow(0 0 12px rgba(245,158,11,0.4));
   }
   /* Glass Morphism */
   .glass {
@@ -172,13 +172,11 @@
   .text-body {
     @apply text-base sm:text-lg text-muted-foreground leading-relaxed;
   }
-
   /* Marquee Optimization */
   .marquee-container {
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   }
-  
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }

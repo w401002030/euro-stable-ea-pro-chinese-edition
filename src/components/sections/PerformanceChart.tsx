@@ -61,9 +61,9 @@ export function PerformanceChart() {
                     data={performanceData}
                     margin={{
                       top: 10,
-                      right: 10,
-                      left: 0,
-                      bottom: 0,
+                      right: 20,
+                      left: 40,
+                      bottom: 10,
                     }}
                   >
                     <defs>
