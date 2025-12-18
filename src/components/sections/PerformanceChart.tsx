@@ -34,9 +34,9 @@ export function PerformanceChart() {
               真实的历史性能
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              查看我们的EA从���资金开启的稳定增长曲线，并感受
+              查看我们的EA从小资金开启的稳定增长曲线，并感受
               <span
-                className="font-bold"
+                className="font-bold mx-1"
                 style={{
                   background:
                     "linear-gradient(90deg, #10B981 0%, #F59E0B 20%, #FCD34D 40%, #FBBF24 55%, #EF4444 75%, #EC4899 100%)",
@@ -51,7 +51,7 @@ export function PerformanceChart() {
               >
                 复利
               </span>
-              带来��魅力
+              带来的魅��
             </p>
             <div className="flex justify-center mt-8">
               <Button
@@ -63,7 +63,7 @@ export function PerformanceChart() {
               </Button>
             </div>
           </div>
-          <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden">
+          <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden border-2 border-emerald-500/20">
             <CardHeader>
               <CardTitle>资金增长曲线 (USD)</CardTitle>
             </CardHeader>
@@ -113,7 +113,7 @@ export function PerformanceChart() {
                       tickMargin={12}
                       fontSize={12}
                       domain={['auto', 'auto']}
-                      tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+                      tickFormatter={(value) => `${(value / 1000).toFixed(0)}k`}
                     />
                     <Tooltip
                       contentStyle={{
@@ -122,7 +122,7 @@ export function PerformanceChart() {
                         borderRadius: "var(--radius)",
                         boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
                       }}
-                      formatter={(value: number) => [`$${value.toLocaleString()}`, "账户余额"]}
+                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户余额"]}
                       cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
                     />
                     <Area
