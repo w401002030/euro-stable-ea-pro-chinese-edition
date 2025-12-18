@@ -14,19 +14,20 @@ import { useCallback } from "react";
  * CheckoutDialog – a simple contact modal.
  *
  * - Shows a title and description (optionally prefixed with the selected plan).
+ * - Restores the WeChat QR code placeholder.
  * - Provides phone and email contact details with copy‑to‑clipboard buttons.
  * - Uses primitive selectors from the checkout store.
- * - No QR code image is rendered.
+ * - Fixes Radix UI accessibility warnings with aria-describedby.
  */
 export function CheckoutDialog() {
   // Primitive selectors for store state
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎来电咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
-const descriptionText = selectedPlan
-  ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
-  : baseDescription;
+  const baseDescription = "欢���来电咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
+  const descriptionText = selectedPlan
+    ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
+    : baseDescription;
   // Contact details
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
@@ -34,7 +35,7 @@ const descriptionText = selectedPlan
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴板！");
+      toast.success("已复制到剪贴���！");
     } catch {
       // Fallback for older browsers
       const textarea = document.createElement("textarea");
@@ -61,59 +62,72 @@ const descriptionText = selectedPlan
   }
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-      <DialogContent className="max-w-sm sm:max-w-md">
+      <DialogContent className="max-w-sm sm:max-w-md" aria-describedby="checkout-desc">
         <DialogHeader>
           <DialogTitle>联系购买</DialogTitle>
-          <DialogDescription className="text-lg md:text-xl font-semibold leading-relaxed mt-2 text-muted-foreground">
+          <DialogDescription id="checkout-desc" className="text-lg md:text-xl font-semibold leading-relaxed mt-2 text-muted-foreground">
             {descriptionText}
           </DialogDescription>
         </DialogHeader>
-        <div className="py-4 flex flex-col items-center gap-3">
-          <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
-            <span className="text-base text-muted-foreground shrink-0">联系电话：</span>
-            <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
-              {phoneNum}
-            </code>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              className="h-8 w-14 shrink-0 ml-2"
-              onClick={() => copyToClipboard(phoneNum)}
-            >
-              复制
-            </Button>
-          </p>
-          <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
-            <span className="text-base text-muted-foreground shrink-0">国际联系：</span>
-            <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
-              {overseasPhoneNum}
-            </code>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              className="h-8 w-14 shrink-0 ml-2"
-              onClick={() => copyToClipboard(overseasPhoneNum)}
-            >
-              复制
-            </Button>
-          </p>
-          <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
-            <span className="text-base text-muted-foreground shrink-0">联系邮箱：</span>
-            <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
-              {emailAddr}
-            </code>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              className="h-8 w-14 shrink-0 ml-2"
-              onClick={() => copyToClipboard(emailAddr)}
-            >
-              复制
-            </Button>
-          </p>
+        <div className="py-4 flex flex-col items-center gap-6">
+          {/* WeChat QR Code Section */}
+          <div className="flex flex-col items-center gap-2">
+            <div className="p-2 bg-white rounded-xl border shadow-sm">
+              <img 
+                src="https://placehold.co/200x200?text=WeChat+QR" 
+                alt="WeChat QR Code" 
+                className="w-40 h-40 object-cover rounded-lg"
+              />
+            </div>
+            <p className="text-xs text-muted-foreground">扫码添加微信客服</p>
+          </div>
+          <div className="w-full space-y-3">
+            <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
+              <span className="text-base text-muted-foreground shrink-0">联系电话��</span>
+              <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
+                {phoneNum}
+              </code>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="h-8 w-14 shrink-0 ml-2"
+                onClick={() => copyToClipboard(phoneNum)}
+              >
+                复制
+              </Button>
+            </p>
+            <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
+              <span className="text-base text-muted-foreground shrink-0">国际联系：</span>
+              <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
+                {overseasPhoneNum}
+              </code>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="h-8 w-14 shrink-0 ml-2"
+                onClick={() => copyToClipboard(overseasPhoneNum)}
+              >
+                复制
+              </Button>
+            </p>
+            <p className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full justify-center sm:justify-between">
+              <span className="text-base text-muted-foreground shrink-0">联系邮箱：</span>
+              <code className="text-lg font-semibold text-foreground font-mono bg-muted px-2 py-1 rounded-md select-all select-text">
+                {emailAddr}
+              </code>
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="h-8 w-14 shrink-0 ml-2"
+                onClick={() => copyToClipboard(emailAddr)}
+              >
+                复制
+              </Button>
+            </p>
+          </div>
         </div>
         <DialogFooter>
           <Button variant="outline" onClick={close} className="w-full">
