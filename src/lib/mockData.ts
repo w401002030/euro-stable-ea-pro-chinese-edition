@@ -43,28 +43,28 @@ export const features: {
 }[] = [
   {
     icon: Zap,
-    title: "全自动智能���易",
-    description: "基于深度神经网络算法，24/7 自动识别市场趋势��执行交易，无需人工盯盘。",
+    title: "全自动智能交易",
+    description: "基于深度神经网络算���，24/7 自动识别市场趋势并执行交易，无需人工盯盘。",
   },
   {
     icon: TrendingUp,
-    title: "复利增长模式",
-    description: "支持动态仓位管理，随账户余额增长自动调���手数，实现复利的指数级增长。",
+    title: "复利增长���式",
+    description: "支持动态仓位管理，随账户余额增长自动调整手数，实现复利的指数级增长。",
   },
   {
     icon: BarChart,
-    title: "完美适配策略",
+    title: "完美适配策���",
     description: "完美适配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系统性风险。",
   },
   {
     icon: LifeBuoy,
     title: "智能新闻过滤",
-    description: "自动识别重大影响财经数据发布时��，在极端波动行情前自动规避，保护本金安全。",
+    description: "自动识别重大影响财经数据发布时间，在极端波动行情前自动规避，保护本金安全。",
   },
   {
     icon: ShieldCheck,
     title: "超低回撤控制",
-    description: "部署多重风控算法，严��控制每笔交易风险，确保账户回撤始终处于可控范围。",
+    description: "部署多重风控算法，严格控制每笔交易风险，确保账户回撤始终处于可控���围。",
   },
   {
     icon: Clock,
@@ -80,8 +80,8 @@ export const pricingPlans = [
     features: [
       "1个真实账户终身许可",
       "标准技术支持",
-      "建议初始资金：最低500美元 (美分账户)",
-      "免�� VPS 云端挂载教程",
+      "建议初始资金：最��500美元 (美分账户)",
+      "免费 VPS 云端挂载教程",
     ],
     isRecommended: false,
   },
@@ -100,14 +100,14 @@ export const pricingPlans = [
   },
   {
     name: "V4.beta 旗舰版",
-    price: "即将推出",
+    price: "即���推出",
     features: [
       "3个真实账户终身许可",
-      "无限模拟账户许可",
-      "���天候专业技术咨询",
+      "无限模��账户许可",
+      "全天候专业技术咨询",
       "独家 Beta 策略访问权",
       "建议初始资金：10000美元+",
-      "低延迟专用服���器支持",
+      "低延迟专用���务器支持",
     ],
     isRecommended: false,
   },
@@ -117,32 +117,32 @@ export const faqItems = [
   {
     question: "MT4是什么？",
     answer:
-      "MT4 (MetaTrader 4) 是全球最流行的外汇交易平台，支持 EA 自动交易，提供图表分析与下单管理和一键交易等功能。",
+      "MT4 (MetaTrader 4) 是全球最流行的外汇交易平台，支持 EA 自动交易，提供图表分析与下单管理和���键交易等功能。",
   },
   {
     question: "什么是 EA (智能交易系统)？",
     answer:
-      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程序，它根据预设的逻���自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
+      "EA (Expert Advisor) 是一种在 MetaTrader 平台上运行的全自动交易程��，它根据预设的逻辑自动执行买卖操作，消除了情绪干扰，实现 24 小时不间断交易。",
   },
   {
     question: "Euro Stable EA 的最低资金要求是多少？",
     answer:
-      "对于标准账户，我们建议最低入金 1000 美元 (美金账户)。如果您使用美分账户 (Cent Account)，最低 500 美元即可开始运行，并确保有足够保证金应对市场波动。",
+      "对于标准账户，我们建议最低入金 1000 美元 (美金账户)。如果您使用美分账户 (Cent Account)，最低 500 美元即可开始运行，并确保���足够保证金应对市场波动。",
   },
   {
     question: "我需要一直保持电脑开启吗？",
     answer:
-      "是的，EA 需要 MT4 平台持续在线，我们提供部署 VPS (虚拟专用服务器) 的教程，它可以让您的交易环境在云端 24/7 稳定运行，不受本��断网或断电影响。",
+      "是的，EA 需要 MT4 平台持续在线，我们提供部署 VPS (虚拟专用服务器) 的教程，它可以让您的交易环境在云端 24/7 稳定运行，不受本地断网或断电影响。",
   },
   {
-    question: "安装和设置过程复杂吗？",
+    question: "安装和设置过程复��吗？",
     answer:
-      "非常简单。我们提供详细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
+      "非常简单。我们提供详细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团��也提供远程协助服务。",
   },
   {
     question: "购买后是否还有后续续费费用？",
     answer:
-      "没有。您购买的是���身授权许可。所有未来的策略优化、参数更新和软件升级均对所有客户免费开放。",
+      "没有。您购买的是终身授权许可。所有未��的策略优化、参数更新和软件升级均对所有客户免费开放。",
   },
 ];
 // Data for the stats ticker
@@ -155,22 +155,22 @@ export const statsData = [
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变了我的投资方式. 它的稳定性令人印象深刻，回撤控制得非常好。",
+    quote: "Euro Stable EA 彻底改变了我的投资方式. 它的稳定性令人印���深刻，回撤控制得非常好。",
     author: "Alex Johnson",
     role: "Full-time Trader",
   },
   {
-    quote: "作为一名投资经���，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预���。",
+    quote: "��为一名投资经理，我一直在寻找可靠的自动化工具。V3Pro 的表现超过了我的预期。",
     author: "Sophia Lee",
     role: "Asset Manager",
   },
   {
-    quote: "客服团队非常专业，安装过程很顺利。运行两个月以来，收益非常稳定。",
+    quote: "客服团队非常专业，安装过程很顺利。运行��个月以来，收益非常稳定。",
     author: "Michael Chen",
     role: "Forex Enthusiast",
   },
   {
-    quote: "该系统的风控逻辑非常严密，���别是在回撤管理上，体现了极高���专业水平，是长期资产配置的理想选择。",
+    quote: "该系统的风控逻辑非常严密，特别是���回撤管理上，体现了极高的专业水平，是长期资产配置的理想选择。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
@@ -185,27 +185,27 @@ export const testimonials = [
     role: "Novice Investor",
   },
   {
-    quote: "从量化分析的��度看，这款EA的入场逻辑非常精��，能有效过滤市场噪音，资金曲线的光滑度令人惊叹。",
+    quote: "从量化分析的角度看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的光滑度令人��叹。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
   {
-    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻后重大损失，值得信赖。",
+    quote: "这个EA的新闻过滤功能特别出色，避免了多次重大新闻后重大损失，值��信赖。",
     author: "Lily Wang",
     role: "Business Owner",
   },
   {
-    quote: "从安装到运行全程支持到位，策略参数也很适合小资金用户，收益很可观。",
+    quote: "从安装到运行全程支持���位，策略参数也很适合小资金用户，收益很可��。",
     author: "Ethan Liu",
     role: "Retail Investor",
   },
   {
-    quote: "对于其他EA，这个系统的回撤控制���实名不虚传，赚钱的感觉真棒。",
+    quote: "对于其他EA，这个系统的回撤控制确实名不虚传，赚钱的感觉���棒。",
     author: "Grace Huang",
     role: "Software Engineer",
   },
   {
-    quote: "V3Pro专业版的运行一年多，月��收益稳定在15%以上。",
+    quote: "V3Pro专业版的运行一年多，月化收益稳定在15%以上。",
     author: "James Miller",
     role: "Private Investor",
   },

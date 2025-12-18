@@ -15,9 +15,9 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎电话咨询详细方案或WeChat联系，微信电话同号，在线时间：am9:00-pm18:00";
+  const baseDescription = "欢迎电话咨询详细方案或WeChat联��，微信电话同号，在线时间：am9:00-pm18:00";
   const descriptionText = selectedPlan
-    ? `您对���们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
+    ? `��对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
@@ -26,7 +26,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴板！", {
+      toast.success("���复制到剪贴板！", {
         icon: <CheckCircle2 className="h-4 w-4 text-emerald-500" />,
       });
     } catch {
@@ -48,13 +48,13 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失���，请手动选择复制");
+        toast.error("复制��败，请手动选择复制");
       }
     }
   }, []);
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-      <DialogContent 
+      <DialogContent
         className="max-w-[95vw] sm:max-w-md rounded-2xl"
         aria-describedby="checkout-desc"
       >
@@ -72,7 +72,7 @@ export function CheckoutDialog() {
             >
               <img
                 src="/wechat-qr.png"
-                alt="扫码二维码加微信"
+                alt="扫码二���码加微信"
                 title="扫码二维码加微信"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
                 onError={(e) => {
@@ -88,7 +88,7 @@ export function CheckoutDialog() {
             {[
               { label: "联系电话", value: phoneNum },
               { label: "国际联系", value: overseasPhoneNum },
-              { label: "联系邮箱", value: emailAddr },
+              { label: "联系���箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">
