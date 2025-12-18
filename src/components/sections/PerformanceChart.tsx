@@ -51,7 +51,7 @@ export function PerformanceChart() {
               >
                 复利
               </span>
-              带来的魅��
+              带来的魅力
             </p>
             <div className="flex justify-center mt-8">
               <Button

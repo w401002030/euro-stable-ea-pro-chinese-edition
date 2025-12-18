@@ -15,9 +15,9 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎来电咨��详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
+  const baseDescription = "��迎来电咨询详细方案或WeChat联系，微信电话同号码，在线���间：am10:00-pm17:00";
   const descriptionText = selectedPlan
-    ? `您对我们的 "${selectedPlan}" 方案��兴趣。${baseDescription}`
+    ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
@@ -25,7 +25,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到��贴板！", {
+      toast.success("已复制到剪贴板！", {
         icon: <CheckCircle2 className="h-4 w-4 text-emerald-500" />,
       });
     } catch {
@@ -47,7 +47,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失��，请手动选择复制");
+        toast.error("���制失败，请手动选择复制");
       }
     }
   }, []);
@@ -65,20 +65,20 @@ export function CheckoutDialog() {
           <div className="flex flex-col items-center gap-3">
             <div className="p-3 bg-white rounded-2xl border-2 border-emerald-100 shadow-md dark:border-emerald-900/30">
               <img
-                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码"
+                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二��码"
                 alt="WeChat QR Code"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
               />
             </div>
             <p className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 px-3 py-1 rounded-full">
-              扫码���加微信客服
+              扫码添加微信客服
             </p>
           </div>
           <div className="w-full space-y-4">
             {[
               { label: "联系电话", value: phoneNum },
               { label: "国际联系", value: overseasPhoneNum },
-              { label: "联系邮箱", value: emailAddr },
+              { label: "联系��箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">
@@ -105,7 +105,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11">
-            返回浏览
+            返回浏��
           </Button>
         </DialogFooter>
       </DialogContent>
