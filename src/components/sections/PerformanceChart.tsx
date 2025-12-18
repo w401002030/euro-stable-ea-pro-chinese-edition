@@ -33,13 +33,14 @@ export function PerformanceChart() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               真实的历史性能
             </h2>
-            <p className="mt-4 text-xl md:text-2xl font-semibold leading-relaxed text-foreground max-w-2xl mx-auto">
-              查看我们的EA从小资金开启的稳定增长曲线，并感受
-              <span className="font-bold mx-1 text-golden-glow">
-                复利
-              </span>
-              带来的魅力
-            </p>
+            <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
+              <p className="text-xl md:text-2xl font-semibold text-foreground">
+                查看我们的EA从小资金开启的稳定增长曲线。
+              </p>
+              <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
+                并感受复利带来的魅力
+              </p>
+            </div>
             <div className="flex justify-center mt-8">
               <Button
                 size="lg"
