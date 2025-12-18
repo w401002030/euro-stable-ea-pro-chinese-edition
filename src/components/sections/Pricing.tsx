@@ -23,7 +23,7 @@ export function Pricing() {
             选择适合您的方案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付款，终身使用。无订阅，无隐藏费用。
+            一次性付款��终身使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
@@ -51,7 +51,7 @@ export function Pricing() {
                     <div className="flex justify-between items-center">
                       <CardTitle className="text-2xl md:text-3xl font-bold">{plan.name}</CardTitle>
                       {isRecommended && (
-                        <Badge variant="default" className="bg-emerald-500">
+                        <Badge variant="default" className="bg-emerald-500 text-lg font-bold px-3 py-1">
                           推荐
                         </Badge>
                       )}
