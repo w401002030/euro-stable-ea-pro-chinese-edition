@@ -15,13 +15,14 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "��迎电话咨询详细方案或WeChat联系，微��电话同号，在线时间：am10:00-pm17:00";
+  const baseDescription = "��迎电话咨询详细方案或WeChat联系，微信电话同号，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
-    ? `���对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
+    ? `您对我们��� "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
   const emailAddr = "673351805@qq.com";
+  const wechatLink = "https://u.wechat.com/EDmRt5y9nsZ8VMKR5blaogE?s=2";
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
@@ -47,13 +48,13 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失败，请��动选择复制");
+        toast.error("复制失败��请手动选择复制");
       }
     }
   }, []);
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-        <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl">
+      <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">联系购买</DialogTitle>
           <DialogDescription className="text-lg md:text-xl leading-relaxed mt-2 text-muted-foreground">
@@ -62,19 +63,22 @@ export function CheckoutDialog() {
         </DialogHeader>
         <div className="py-6 flex flex-col items-center gap-8">
           <div className="flex flex-col items-center gap-3">
-            <div className="p-3 bg-white rounded-2xl border-2 border-emerald-100 shadow-md dark:border-emerald-900/30">
+            <div 
+              onClick={() => window.open(wechatLink, '_blank')}
+              className="p-3 bg-white rounded-2xl border-2 border-emerald-100 shadow-md dark:border-emerald-900/30 cursor-pointer hover:scale-105 transition-transform duration-300"
+            >
               <img
                 src="/wechat-qr.png"
-                alt="微信二维码"
+                alt="扫此二维码加微信"
+                title="扫此二维码加微信"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
                 onError={(e) => {
-                  // Fallback if the image is not yet uploaded to public folder
                   (e.target as HTMLImageElement).src = "https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码";
                 }}
               />
             </div>
             <p className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 px-3 py-1 rounded-full">
-              ��码添加微信客服
+              扫码或点击添加微信客服
             </p>
           </div>
           <div className="w-full space-y-4">
