@@ -48,13 +48,13 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失��，请手动选择复制");
+        toast.error("复制���败，请手动选择复制");
       }
     }
   }, []);
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-      <DialogContent 
+      <DialogContent
         className="max-w-[95vw] sm:max-w-md rounded-2xl"
         aria-describedby="checkout-desc"
       >
@@ -72,7 +72,7 @@ export function CheckoutDialog() {
             >
               <img
                 src="/wechat-qr.png"
-                alt="扫此二维码加微信"
+                alt="扫��二维码加微信"
                 title="扫此二维码加微信"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
                 onError={(e) => {
