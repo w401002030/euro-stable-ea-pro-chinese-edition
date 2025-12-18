@@ -23,75 +23,87 @@ export function Pricing() {
             选择适合您的方案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付��，终身使用。无订阅，无隐藏费用。
+            一次性付款，终身使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
-          {pricingPlans.map((plan, index) => (
-            <motion.div
-              key={plan.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card
-                className={cn(
-                  "flex flex-col h-full border-2 border-emerald-500 shadow-xl dark:shadow-emerald-500/20 transition-all duration-300 hover:scale-[1.02]",
-                  plan.isRecommended ? "ring-4 ring-emerald-500/10" : ""
-                )}
+          {pricingPlans.map((plan, index) => {
+            const isBeta = plan.name.includes("V4.beta");
+            const isRecommended = plan.isRecommended;
+            return (
+              <motion.div
+                key={plan.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <CardHeader>
-                  <div className="flex justify-between items-center">
-                    <CardTitle className="text-2xl md:text-3xl font-bold">{plan.name}</CardTitle>
-                    {plan.isRecommended && (
-                      <Badge variant="default" className="bg-emerald-500">
-                        推荐
-                      </Badge>
-                    )}
-                  </div>
-                  <CardDescription>
-                    <span className="text-4xl font-bold text-foreground">
-                      {plan.price}
-                    </span>
-                    <span className="text-muted-foreground"> / 终身许可</span>
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="space-y-4">
-                    {plan.features.map((feature) => (
-                      <li key={feature} className="flex items-start">
-                        <Check className="h-5 w-5 text-emerald-500 mr-2 flex-shrink-0 mt-1" />
-                        <span className="text-muted-foreground">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  {plan.name.includes("V4.beta") ? (
-                    <Button className="w-full" disabled variant="outline">
-                      敬请期待
-                    </Button>
-                  ) : (
-                    <Button
-                      onClick={() => open(plan.name)}
-                      className={cn(
-                        "w-full",
-                        plan.isRecommended
-                          ? "bg-emerald-500 hover:bg-emerald-600 text-white"
-                          : ""
-                      )}
-                      variant={plan.isRecommended ? "default" : "outline"}
-                    >
-                      立即购买
-                    </Button>
+                <Card
+                  className={cn(
+                    "flex flex-col h-full transition-all duration-300 hover:scale-[1.02]",
+                    // Beta card: standard styling, no emerald glow
+                    isBeta 
+                      ? "border border-border shadow-md" 
+                      : "border-2 border-emerald-500 shadow-xl dark:shadow-emerald-500/20",
+                    // Recommended card: extra ring highlight
+                    isRecommended ? "ring-4 ring-emerald-500/10" : ""
                   )}
-                </CardFooter>
-              </Card>
-            </motion.div>
-          ))}
+                >
+                  <CardHeader>
+                    <div className="flex justify-between items-center">
+                      <CardTitle className="text-2xl md:text-3xl font-bold">{plan.name}</CardTitle>
+                      {isRecommended && (
+                        <Badge variant="default" className="bg-emerald-500">
+                          推荐
+                        </Badge>
+                      )}
+                    </div>
+                    <CardDescription>
+                      <span className="text-4xl font-bold text-foreground">
+                        {plan.price}
+                      </span>
+                      {!isBeta && <span className="text-muted-foreground"> / 终身许可</span>}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <ul className="space-y-4">
+                      {plan.features.map((feature) => (
+                        <li key={feature} className="flex items-start">
+                          <Check className={cn(
+                            "h-5 w-5 mr-2 flex-shrink-0 mt-1",
+                            isBeta ? "text-muted-foreground" : "text-emerald-500"
+                          )} />
+                          <span className="text-muted-foreground">
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  <CardFooter>
+                    {isBeta ? (
+                      <Button className="w-full" disabled variant="outline">
+                        敬请期���
+                      </Button>
+                    ) : (
+                      <Button
+                        onClick={() => open(plan.name)}
+                        className={cn(
+                          "w-full",
+                          isRecommended
+                            ? "bg-emerald-500 hover:bg-emerald-600 text-white"
+                            : ""
+                        )}
+                        variant={isRecommended ? "default" : "outline"}
+                      >
+                        立即购买
+                      </Button>
+                    )}
+                  </CardFooter>
+                </Card>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
