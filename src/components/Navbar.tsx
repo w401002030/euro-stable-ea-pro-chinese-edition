@@ -16,9 +16,9 @@ export function Navbar() {
   }, []);
   const navLinks = [
     { name: "性能", href: "#performance" },
-    { name: "��性", href: "#features" },
+    { name: "特性", href: "#features" },
     { name: "价格", href: "#pricing" },
-    { name: "操作说明", href: "#operation" },
+    { name: "操���说明", href: "#operation" },
     { name: "常见问题", href: "#faq" },
   ];
   return (

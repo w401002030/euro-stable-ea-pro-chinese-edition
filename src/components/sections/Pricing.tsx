@@ -23,7 +23,7 @@ export function Pricing() {
             选择适合您的方案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付款，终身使用。无订阅，无隐藏费用。
+            一次性付款，终���使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
@@ -41,11 +41,9 @@ export function Pricing() {
                 <Card
                   className={cn(
                     "flex flex-col h-full transition-all duration-300 hover:scale-[1.02]",
-                    // Beta card: standard styling, no emerald glow
-                    isBeta 
-                      ? "border border-border shadow-md" 
+                    isBeta
+                      ? "border border-border shadow-md"
                       : "border-2 border-emerald-500 shadow-xl dark:shadow-emerald-500/20",
-                    // Recommended card: extra ring highlight
                     isRecommended ? "ring-4 ring-emerald-500/10" : ""
                   )}
                 >
@@ -83,7 +81,7 @@ export function Pricing() {
                   <CardFooter>
                     {isBeta ? (
                       <Button className="w-full" disabled variant="outline">
-                        敬请期待���
+                        敬��期待
                       </Button>
                     ) : (
                       <Button

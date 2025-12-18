@@ -34,19 +34,19 @@ export function PerformanceChart() {
               真实的历史性能
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              查看我们的EA从小���金开启的稳定增长曲线，并感受
+              查看我们的EA从小资金开启的稳定增长曲线，并感受
               <span
                 className="font-bold mx-1"
                 style={{
                   background:
-                    "linear-gradient(90deg, #10B981 0%, #F59E0B 20%, #FCD34D 40%, #FBBF24 55%, #EF4444 75%, #EC4899 100%)",
+                    "linear-gradient(90deg, #10B981 0%, #34D399 30%, #F59E0B 70%, #FCD34D 100%)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   textShadow:
-                    "0 0 10px rgba(16,185,129,0.6), 0 0 20px rgba(245,158,11,0.5), 0 0 30px rgba(239,68,68,0.4), 0 0 40px rgba(236,72,153,0.3)",
+                    "0 0 20px rgba(16,185,129,0.8), 0 0 30px rgba(245,158,11,0.6)",
                   filter:
-                    "drop-shadow(0 0 12px rgba(255,255,255,0.4)) drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
+                    "drop-shadow(0 0 10px rgba(16,185,129,0.5))",
                 }}
               >
                 复利
