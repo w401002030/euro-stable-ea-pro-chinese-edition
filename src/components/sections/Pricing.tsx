@@ -86,15 +86,10 @@ export function Pricing() {
                     ) : (
                       <Button
                         onClick={() => open(plan.name)}
-                        className={cn(
-                          "w-full",
-                          isRecommended
-                            ? "bg-emerald-500 hover:bg-emerald-600 text-white"
-                            : ""
-                        )}
-                        variant={isRecommended ? "default" : "outline"}
+                        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white"
+                        variant="default"
                       >
-                        立即购买
+                        ��即购买
                       </Button>
                     )}
                   </CardFooter>
