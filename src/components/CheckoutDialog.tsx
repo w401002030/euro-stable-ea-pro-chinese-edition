@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "��迎来电咨询详细方案或WeChat联系，微信电话���号码，在线时间：am10:00-pm17:00";
+  const baseDescription = "欢迎电话咨询详细方案或WeChat联系，微信电话同号码，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -47,7 +47,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失败，请手���选择复制");
+        toast.error("复制失败，请手动选择复制");
       }
     }
   }, []);
@@ -76,7 +76,7 @@ export function CheckoutDialog() {
           <div className="w-full space-y-4">
             {[
               { label: "联系电话", value: phoneNum },
-              { label: "��际联系", value: overseasPhoneNum },
+              { label: "国际联系", value: overseasPhoneNum },
               { label: "联系邮箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">

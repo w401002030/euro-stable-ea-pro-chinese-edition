@@ -20,7 +20,7 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            选��适合您的方案
+            选择适合您的方案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             一次性付款，终身使用。无订阅，无隐藏费用。
