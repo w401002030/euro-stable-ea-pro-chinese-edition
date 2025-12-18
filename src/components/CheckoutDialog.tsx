@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎电话咨询详���方案或WeChat联系，微信电话同号，在线时间：am9:00-pm18:00";
+  const baseDescription = "��迎电话咨询详细方案或WeChat联系，微信电话同号，在线时间：am9:00-pm18:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -26,7 +26,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已复制到剪贴板！", {
+      toast.success("已复制到剪贴板��", {
         icon: <CheckCircle2 className="h-4 w-4 text-emerald-500" />,
       });
     } catch {
@@ -48,7 +48,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制��败，请手动选择复制");
+        toast.error("复制失��，请手动选择复制");
       }
     }
   }, []);
@@ -60,7 +60,6 @@ export function CheckoutDialog() {
       >
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">联系购买</DialogTitle>
-          {/* DialogDescription must be rendered within DialogHeader for accessibility compliance */}
           <DialogDescription id="checkout-desc" className="text-lg md:text-xl leading-relaxed mt-2 text-muted-foreground">
             {descriptionText}
           </DialogDescription>
@@ -75,7 +74,6 @@ export function CheckoutDialog() {
                 src="/wechat-qr.png"
                 alt="扫码二维码加微信"
                 title="扫码二维码加微信"
-                // Changed object-cover to object-contain to prevent distortion
                 className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = "https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码";
@@ -117,7 +115,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11">
-            返回预览
+            返回预���
           </Button>
         </DialogFooter>
       </DialogContent>
