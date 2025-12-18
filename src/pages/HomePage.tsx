@@ -20,8 +20,8 @@ export function HomePage() {
         <Features />
         <StatsTicker />
         <Pricing />
-        <FAQ />
         <OperationGuide />
+        <FAQ />
         <Testimonials />
       </main>
       <Footer />
