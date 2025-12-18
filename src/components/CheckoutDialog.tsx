@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "��迎来电咨询详细方案或WeChat联系，��信电话同号码，在线时间：am10:00-pm17:00";
+  const baseDescription = "欢迎来电咨询详细方案或WeChat联系，���信电话同号码，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
