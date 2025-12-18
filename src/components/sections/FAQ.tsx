@@ -15,7 +15,7 @@ export function FAQ() {
             常见问题解答
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            还有其他问题��📞随时联系我们的客服。
+            还有其他问题？📞 ��时联系我们的客服。
           </p>
         </div>
         <motion.div
