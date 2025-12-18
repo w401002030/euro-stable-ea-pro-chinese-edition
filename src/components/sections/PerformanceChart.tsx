@@ -35,10 +35,10 @@ export function PerformanceChart() {
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground">
-                查看我们的EA从小资金开启的稳定增长曲线。
+                查看我们的EA从小资金开启的稳定增���曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并��受复利带来的魅力
+                并感���复利带来的魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
