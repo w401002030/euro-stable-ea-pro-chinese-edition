@@ -38,7 +38,7 @@ export function PerformanceChart() {
                 查看我们的EA从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并感受复利带来的魅力
+                并感���复利带来的魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
