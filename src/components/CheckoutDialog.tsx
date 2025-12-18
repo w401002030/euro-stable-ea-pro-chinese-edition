@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎电话咨询详细方案或WeChat联系，微信电话同号，在线时间：am10:00-pm17:00";
+  const baseDescription = "欢迎电话咨询详细方���或WeChat联系，微信电话同号，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -55,7 +55,7 @@ export function CheckoutDialog() {
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
       <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl" aria-describedby="checkout-desc">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">联系购买</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">联系��买</DialogTitle>
           <DialogDescription id="checkout-desc" className="text-lg md:text-xl leading-relaxed mt-2 text-muted-foreground">
             {descriptionText}
           </DialogDescription>
@@ -64,13 +64,17 @@ export function CheckoutDialog() {
           <div className="flex flex-col items-center gap-3">
             <div className="p-3 bg-white rounded-2xl border-2 border-emerald-100 shadow-md dark:border-emerald-900/30">
               <img
-                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码"
+                src="/wechat-qr.png"
                 alt="微信二维码"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
+                onError={(e) => {
+                  // Fallback if the image is not yet uploaded to public folder
+                  (e.target as HTMLImageElement).src = "https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码";
+                }}
               />
             </div>
             <p className="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 px-3 py-1 rounded-full">
-              扫码添加微信客服
+              ��码添加微信客服
             </p>
           </div>
           <div className="w-full space-y-4">
