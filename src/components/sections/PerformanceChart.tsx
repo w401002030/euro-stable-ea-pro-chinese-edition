@@ -38,7 +38,7 @@ export function PerformanceChart() {
                 查看我们的EA从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并��受复利带来的魅力
+                并享受复利带来的魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -53,7 +53,7 @@ export function PerformanceChart() {
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden border-2 border-emerald-500/20">
             <CardHeader>
-              <CardTitle>资金���长曲线 (美金)</CardTitle>
+              <CardTitle>资金增长曲线 (美金)</CardTitle>
             </CardHeader>
             <CardContent className="p-0 pt-4">
               <div className="h-[400px] md:h-[500px] w-full min-h-[400px]">
