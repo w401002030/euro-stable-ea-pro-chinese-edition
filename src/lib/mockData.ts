@@ -49,11 +49,11 @@ export const features: {
   {
     icon: TrendingUp,
     title: "复利增长模式",
-    description: "支持动态仓位管理，随账户余额增长自动调整手数，实现复利的指数级增长。",
+    description: "支持动态仓位管���，随账户余额增长自动调整手数，实现复利的指数级增长。",
   },
   {
     icon: BarChart,
-    title: "完美适配策略",
+    title: "完美适配���略",
     description: "完美适配 EURUSD, GBPUSD 等主流货币对，通过多品种分散投资降低系统性风险。",
   },
   {
@@ -63,13 +63,13 @@ export const features: {
   },
   {
     icon: ShieldCheck,
-    title: "超低回撤控制",
-    description: "部署多重风控算法，严格控制每笔交易风险，确保账户回撤始终处于可控范围。",
+    title: "超低��撤控制",
+    description: "部署多重风控算法，严格控制每笔交易风险，确保账户回撤始终处于可控范���。",
   },
   {
     icon: Clock,
     title: "专业技术支持",
-    description: "提供一对一远程安装指导与策略优化建议，确保每一位用户都能顺利开启交易。",
+    description: "提��一对一远程安装指导与策略优化建议，确保每一位用户都能顺利开启交易。",
   },
 ];
 // Data for the pricing plans
@@ -81,7 +81,7 @@ export const pricingPlans = [
       "1个真实账户终身许可",
       "2个模拟账户许可",
       "标准技术支持",
-      "建议初始资金：500美元 (美分账户)",
+      "建议初始资金���500美元 (美分账户)",
       "免费 VPS 云端挂载教程",
     ],
     isRecommended: false,
@@ -93,7 +93,7 @@ export const pricingPlans = [
       "2个真实账户终身许可",
       "5个模拟账户许可",
       "终身免费版本更新",
-      "优质技术支持响应",
+      "优���技术支持响应",
       "高级新闻过滤系统",
       "建议初始资金：1000美元 (美分账户)",
       "赠送 1个月 高性能 VPS",
@@ -102,14 +102,14 @@ export const pricingPlans = [
   },
   {
     name: "V4.beta 旗舰版",
-    price: "即将推出",
+    price: "即��推出",
     features: [
       "3个真实账户终身许可",
       "无限模拟账户许可",
       "全天候专业技术咨询",
       "独家 Beta 策略访问权",
       "建议初始资金：10000美元+",
-      "低延迟专用服务器支持",
+      "低延迟专用服���器支持",
     ],
     isRecommended: false,
   },
@@ -124,22 +124,22 @@ export const faqItems = [
   {
     question: "Euro Stable EA 的最低资金要求是多少？",
     answer:
-      "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 100 美元即可开始运行，以确保有足够保证金应对市场波动。",
+      "对于标准账户，我们建议最低入金 1000 美元. 如果您使用美分账户 (Cent Account)，最低 500 美元即可开始运行，��确保有足够保证金应对市场波动。",
   },
   {
     question: "我需要一直保持电脑开启吗？",
     answer:
-      "是的，EA 需要 MT4 平台持续在线。我们强烈建议使用 VPS (虚拟专用服务器)，它可以让您的交易环境在云端 24/7 稳定运行，不受本地断网或断电影响。",
+      "是的，EA 需要 MT4 平台持续在线。我们强烈建议使用 VPS (虚拟专用服务器)，它可以让您的交易环境在云端 24/7 稳定运行，���受本地断网或断电影响。",
   },
   {
-    question: "安装和设置过程复杂吗？",
+    question: "安装和设置过程复���吗？",
     answer:
-      "非常简单。我们提供详细的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团队也提供远程协助服务。",
+      "非常简单。我们提供详��的中文图文手册和视频教程。通常只需 10-15 分钟即可完成设置。我们的技术团���也提供远程协助服务。",
   },
   {
     question: "购买后是否还有后续续费费用？",
     answer:
-      "没有。您购买的是终身授权许可。所有未来的策略优化、参数更新和软件升级均对现有客户免费开放。",
+      "没有。您购买的是终身授权许可。所有未���的策略优化、参数更新和软件升级均对现有客户免费开放。",
   },
 ];
 // Data for the stats ticker
@@ -152,7 +152,7 @@ export const statsData = [
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA 彻底改变了我的投资方式。它的稳定性令人印象深刻，回撤控制得非常好。",
+    quote: "Euro Stable EA 彻底改变了我的投资方式。它的稳定性令人印���深刻，回撤控制得非常好。",
     author: "Alex Johnson",
     role: "Full-time Trader",
   },
@@ -162,12 +162,12 @@ export const testimonials = [
     role: "Asset Manager",
   },
   {
-    quote: "客服团队非常专业，安装过程很顺利。运行三个月以来，收益非常稳定。",
+    quote: "客服团队非常专业，安装过程很顺利。运行三个月���来，收益非常稳定。",
     author: "Michael Chen",
     role: "Forex Enthusiast",
   },
   {
-    quote: "该系统的风控逻辑非常严密，尤其是在回撤管理上，体现了极高的专业水平，是长期资产配置的理想选择。",
+    quote: "该系统的风控逻辑非常严密，尤其是在���撤管理上，体现了极高的专业水平，是长期资产配置的理想选择。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
@@ -182,7 +182,7 @@ export const testimonials = [
     role: "Novice Investor",
   },
   {
-    quote: "从量化分析的角度看，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的平滑度令人惊叹。",
+    quote: "从量化分析的角度���，这款EA的入场逻辑非常精准，能有效过滤市场噪音，资金曲线的平滑度令人���叹。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
@@ -197,17 +197,17 @@ export const testimonials = [
     role: "Retail Investor",
   },
   {
-    quote: "对比其他EA，这个系统的回撤控制确实名不虚传，赚钱的感觉真好。",
+    quote: "对比其他EA，这个���统的回撤控制确实名不虚传，赚钱的感觉真好。",
     author: "Grace Huang",
     role: "Software Engineer",
   },
   {
-    quote: "V3Pro专业版的VPS赠送服务很贴心，运行一年多，月均收益稳定在15%以上。",
+    quote: "V3Pro专业版的VPS赠送服务很���心，运行一年多，月均收益稳定在15%以上。",
     author: "James Miller",
     role: "Private Investor",
   },
   {
-    quote: "多品种对冲策略让投资更加安全，资金曲线非常漂亮，强烈推荐给朋友。",
+    quote: "多品种对冲策略让投资更加安全，资金曲线非常漂亮，强烈推荐���朋友。",
     author: "Sarah Thompson",
     role: "Financial Analyst",
   },
