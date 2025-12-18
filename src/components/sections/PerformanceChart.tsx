@@ -34,7 +34,7 @@ export function PerformanceChart() {
               真实的历史性能
             </h2>
 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-  查看我的EA从小资金开启的稳定增长曲线。并感受
+  查看我们的EA从小资金开启的稳定增长曲线，并感受
   <span
     className="font-bold"
     style={{
