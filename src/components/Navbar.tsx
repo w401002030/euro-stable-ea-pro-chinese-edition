@@ -17,7 +17,7 @@ export function Navbar() {
   const navLinks = [
     { name: "战绩", href: "#performance" },
     { name: "特性", href: "#features" },
-    { name: "价格", href: "#pricing" },
+    { name: "���格", href: "#pricing" },
     { name: "操作说明", href: "#operation" },
     { name: "常见问题", href: "#faq" },
   ];
@@ -74,7 +74,8 @@ export function Navbar() {
             <ThemeToggle className="relative top-0 right-0" />
             <Button
               onClick={() => open()}
-              className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white"
+              size="lg"
+              className="hidden sm:inline-flex bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl"
             >
               立即购买
             </Button>

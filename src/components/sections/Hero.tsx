@@ -22,13 +22,13 @@ export function Hero() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300 text-pretty">
-            释放您的交易潜力。我们的智能交易系统 (EA) 采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
+            释放您的交易���力。我们的智能交易系统 (EA) 采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
           </p>
-          <div className="mt-10 flex justify-center gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-6">
             <Button
               size="lg"
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               立即获取
             </Button>
@@ -36,7 +36,7 @@ export function Hero() {
               size="lg"
               variant="outline"
               onClick={() => document.getElementById('performance')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-lg px-8 py-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+              className="text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               查看战绩
             </Button>
