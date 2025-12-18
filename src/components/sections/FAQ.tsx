@@ -15,7 +15,7 @@ export function FAQ() {
             常见问题解答
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            还有其他问题？📞随时联系我们的客服。
+            还有其他问题��📞随时联系我们的客服。
           </p>
         </div>
         <motion.div
@@ -27,10 +27,10 @@ export function FAQ() {
           <Accordion type="single" collapsible className="w-full">
             {faqItems.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-lg">
+                <AccordionTrigger className="text-left text-lg hover:no-underline hover:text-emerald-500 transition-colors">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground">
+                <AccordionContent className="text-base text-muted-foreground leading-relaxed">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
