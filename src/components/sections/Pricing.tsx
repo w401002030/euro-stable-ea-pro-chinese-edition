@@ -20,10 +20,10 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            选择适合您的方案
+            选择适合您的���案
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付款��终身使用。无订阅，无隐藏费用。
+            一次性付款，终���使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
@@ -94,7 +94,7 @@ export function Pricing() {
                         )}
                         variant={isRecommended ? "default" : "outline"}
                       >
-                        立即购买
+                        立���购买
                       </Button>
                     )}
                   </CardFooter>
