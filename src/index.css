@@ -78,7 +78,7 @@
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-osx-font-smoothing: grayscale;
   }
   body {
     @apply bg-background text-foreground;
@@ -111,6 +111,15 @@
   }
   .text-pretty {
     text-wrap: pretty;
+  }
+  /* Specialized Golden Glow for Performance Highlights */
+  .text-golden-glow {
+    background-image: linear-gradient(90deg, #FCD34D 0%, #FBBF24 40%, #F59E0B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(252,211,77,0.8), 0 0 25px rgba(251,191,36,0.6), 0 0 35px rgba(245,158,11,0.4);
+    filter: drop-shadow(0 0 8px rgba(252,211,77,0.7));
   }
   /* Glass Morphism */
   .glass {
