@@ -11,17 +11,17 @@ const steps = [
   {
     icon: Download,
     title: "2. 下载软件",
-    description: "购买后，���将收到包含 EA 文件、安装手册和预设参数文件的下载链接。",
+    description: "购买后，您将收到包含 EA 文件、安装手册和预设参数文件的下载链接。",
   },
   {
     icon: Settings,
     title: "3. 加载 EA",
-    description: "将 EA 文件放入 MT4 专用目录，加载到指定的货币对图表，并导入我们提供的优化参数。",
+    description: "将 EA 文件放入 MT4 专用目录，加载到指定的货币对图表，并导入我们提供的优化���数。",
   },
   {
     icon: Play,
     title: "4. 开启交易",
-    description: "确��� MT4 的“自动交易”按钮已开启。EA ���开始全天候监控市场并自动执行策略。",
+    description: "确保 MT4 的“自动交易”按钮已开启。EA 将开始全天候监控���场并自动执行策略。",
   },
 ];
 export function OperationGuide() {
@@ -33,7 +33,7 @@ export function OperationGuide() {
             操作说明
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            只���简单的四个步骤，即可开启您的自动化交易之路。
+            只需简单的四个步骤，即可开启您的自动化交易之路。
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

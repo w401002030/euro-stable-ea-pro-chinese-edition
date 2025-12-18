@@ -15,7 +15,7 @@ export function Testimonials() {
             客户反馈
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            全球数千名交易者信赖 Euro Stable EA，见证稳定增长的���量。
+            全球数千名交易者信赖 Euro Stable EA，见证稳定增长的力量。
           </p>
         </div>
       </div>
