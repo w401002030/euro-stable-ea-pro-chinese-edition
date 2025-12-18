@@ -15,7 +15,7 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navLinks = [
-    { name: "性能", href: "#performance" },
+    { name: "战绩", href: "#performance" },
     { name: "特性", href: "#features" },
     { name: "价格", href: "#pricing" },
     { name: "操作说明", href: "#operation" },

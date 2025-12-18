@@ -22,7 +22,7 @@ export function Hero() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300 text-pretty">
-            释放您的交易潜力。我们的智能交易系统 (EA) 采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
+            释放��的交易潜力。我们的智能交易系统 (EA) 采用先进算法，旨在实现长期稳定的资本增长，同时将风险降至最低。
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <Button
@@ -38,7 +38,7 @@ export function Hero() {
               onClick={() => document.getElementById('performance')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-lg px-8 py-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
             >
-              查看性能
+              查看战绩
             </Button>
           </div>
         </motion.div>
