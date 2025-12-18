@@ -15,9 +15,9 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎电话咨询详细方案或通过微信联系，微信电话同号，在线时间：（UTC-5）9:00-18:00";
+  const baseDescription = "��迎电话咨询详细方案或通过微信联系，微信电话同号，在线时间：（UTC-5）9:00-18:00";
   const descriptionText = selectedPlan
-    ? `欢迎对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
+    ? `欢迎���我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
   const phoneNum = "+86 18666888095";
   const overseasPhoneNum = "(719) 524-8014";
@@ -47,25 +47,25 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失败，请手动选择复制");
+        toast.error("���制失败，请手动选���复制");
       }
     }
   }, []);
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-        <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl">
-          <DialogDescription className="sr-only">
+      <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl">
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-bold">联系购买</DialogTitle>
+          <DialogDescription className="text-lg md:text-xl font-semibold leading-relaxed text-foreground mt-2">
             {descriptionText}
           </DialogDescription>
-          <DialogHeader>
-            <DialogTitle className="text-2xl font-bold">联系购买</DialogTitle>
-          </DialogHeader>
-          <div className="py-4 flex flex-col gap-6">
+        </DialogHeader>
+        <div className="py-4 flex flex-col gap-6">
           <div className="w-full space-y-4">
             {[
               { label: "联系电话 / 微信", value: phoneNum },
               { label: "国际联系", value: overseasPhoneNum },
-              { label: "联系邮箱", value: emailAddr },
+              { label: "联系��箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">
