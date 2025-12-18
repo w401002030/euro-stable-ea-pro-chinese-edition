@@ -31,7 +31,7 @@ export function PerformanceChart() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              ��实的历史性能
+              真实的历史性能
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               查看我们的EA从���资金开启的稳定增长曲线，并感受
@@ -52,7 +52,7 @@ export function PerformanceChart() {
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden border-2 border-emerald-500/20">
             <CardHeader>
-              <CardTitle>资金���长曲线 (USD)</CardTitle>
+              <CardTitle>资金增长曲线 (USD)</CardTitle>
             </CardHeader>
             <CardContent className="p-0 pt-4">
               <div className="h-[400px] md:h-[500px] w-full min-h-[400px]">
