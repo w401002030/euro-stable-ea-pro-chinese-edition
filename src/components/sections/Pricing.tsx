@@ -83,7 +83,7 @@ export function Pricing() {
                   <CardFooter>
                     {isBeta ? (
                       <Button className="w-full" disabled variant="outline">
-                        敬请期���
+                        敬请期待���
                       </Button>
                     ) : (
                       <Button

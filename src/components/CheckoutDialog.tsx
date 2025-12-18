@@ -1,3 +1,4 @@
+import React, { useCallback } from "react";
 import {
   Dialog,
   DialogContent,
@@ -9,13 +10,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { useCheckoutStore } from "@/hooks/useCheckoutStore";
-import { useCallback } from "react";
 import { Copy, CheckCircle2 } from "lucide-react";
 export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "��迎来电咨询详细方案或WeChat联系，微信电话同号码，在线���间：am10:00-pm17:00";
+  const baseDescription = "��迎来电咨询详细方案或WeChat联系，��信电话同号码，在线时间：am10:00-pm17:00";
   const descriptionText = selectedPlan
     ? `您对我们的 "${selectedPlan}" 方案感兴趣。${baseDescription}`
     : baseDescription;
@@ -47,7 +47,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("���制失败，请手动选择复制");
+        toast.error("复制失败，请���动选择复制");
       }
     }
   }, []);
@@ -57,7 +57,7 @@ export function CheckoutDialog() {
       <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl" aria-describedby="checkout-desc">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">联系购买</DialogTitle>
-          <DialogDescription id="checkout-desc" className="text-sm md:text-base leading-relaxed mt-2 text-muted-foreground">
+          <DialogDescription id="checkout-desc" className="text-lg md:text-xl leading-relaxed mt-2 text-muted-foreground">
             {descriptionText}
           </DialogDescription>
         </DialogHeader>
@@ -65,8 +65,8 @@ export function CheckoutDialog() {
           <div className="flex flex-col items-center gap-3">
             <div className="p-3 bg-white rounded-2xl border-2 border-emerald-100 shadow-md dark:border-emerald-900/30">
               <img
-                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二��码"
-                alt="WeChat QR Code"
+                src="https://placehold.co/200x200/07A86E/FFFFFF?text=微信二维码"
+                alt="微信二维码"
                 className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg"
               />
             </div>
@@ -78,7 +78,7 @@ export function CheckoutDialog() {
             {[
               { label: "联系电话", value: phoneNum },
               { label: "国际联系", value: overseasPhoneNum },
-              { label: "联系��箱", value: emailAddr },
+              { label: "联系邮箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">
@@ -105,7 +105,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11">
-            返回浏��
+            返回浏览
           </Button>
         </DialogFooter>
       </DialogContent>
