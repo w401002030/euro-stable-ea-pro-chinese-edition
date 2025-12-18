@@ -6,7 +6,7 @@ const steps = [
   {
     icon: UserPlus,
     title: "1. 准备账户",
-    description: "��受监管的经纪商处开设 MT4 交易账户，建议使用 ECN 或低点差账户以获得最佳表现。",
+    description: "在受监管的经纪商处开设 MT4 交易账户，建议使�� ECN 或低点差账户以获得最佳表现。",
   },
   {
     icon: Download,
@@ -21,7 +21,7 @@ const steps = [
   {
     icon: Play,
     title: "4. 开启交易",
-    description: "���保 MT4 的“自动交易”按钮已开启。EA 将开始全天候监控市场并自动执行策略。",
+    description: "确保 MT4 的“自动交易”按钮已开启。EA 将开始全天候监控市场并自动执行策略。",
   },
 ];
 export function OperationGuide() {
@@ -30,10 +30,10 @@ export function OperationGuide() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            操作说���
+            操作说明
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            只需简��的四个步骤，即可开启您的自动化交易之���。
+            只需简单的四个��骤，即可开启您的自动化交易之路。
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

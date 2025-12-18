@@ -5,8 +5,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { testimonials } from "@/lib/mockData";
 import { Star } from "lucide-react";
 export function Testimonials() {
-  // Duplicate items to ensure seamless looping
-  const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonials];
+  // Use two sets for a perfect infinite loop with percentage translation
+  const marqueeTestimonials = [...testimonials, ...testimonials];
   return (
     <section id="testimonials" className="py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,18 +27,18 @@ export function Testimonials() {
           <motion.div
             className="flex gap-6 py-4 px-4"
             animate={{
-              x: [0, -1920],
+              x: ["0%", "-50%"],
             }}
             transition={{
-              duration: 40,
+              duration: 30,
               ease: "linear",
               repeat: Infinity,
             }}
             whileHover={{ animationPlayState: "paused" }}
           >
-            {duplicatedTestimonials.map((testimonial, index) => (
-              <Card 
-                key={`${testimonial.author}-${index}`} 
+            {marqueeTestimonials.map((testimonial, index) => (
+              <Card
+                key={`${testimonial.author}-${index}`}
                 className="w-[300px] md:w-[400px] flex-shrink-0 h-full flex flex-col shadow-sm hover:shadow-md transition-shadow border-border/50"
               >
                 <CardContent className="p-6 flex-grow flex flex-col">

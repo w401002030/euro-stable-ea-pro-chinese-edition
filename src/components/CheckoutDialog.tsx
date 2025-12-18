@@ -47,7 +47,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已复制到剪贴板！");
       } else {
-        toast.error("复制失败，请���动选择复制");
+        toast.error("复制失败，请手动选择复制");
       }
     }
   }, []);
@@ -77,7 +77,7 @@ export function CheckoutDialog() {
           <div className="w-full space-y-4">
             {[
               { label: "联系电话", value: phoneNum },
-              { label: "国际联系", value: overseasPhoneNum },
+              { label: "国���联系", value: overseasPhoneNum },
               { label: "联系邮箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
@@ -105,7 +105,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11">
-            ��回浏览
+            返回浏览
           </Button>
         </DialogFooter>
       </DialogContent>

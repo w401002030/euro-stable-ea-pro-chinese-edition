@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { statsData } from "@/lib/mockData";
 export function StatsTicker() {
-  // Triple the data to ensure the track is long enough for a smooth loop
-  const duplicatedStats = [...statsData, ...statsData, ...statsData];
+  // Use two sets for a perfect infinite loop with percentage translation
+  const marqueeStats = [...statsData, ...statsData];
   return (
     <section className="py-12 md:py-16 bg-slate-50 dark:bg-slate-900/50 border-y border-border/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
@@ -13,7 +13,7 @@ export function StatsTicker() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            实时数据更新
+            实时数据���新
           </div>
         </div>
       </div>
@@ -23,21 +23,21 @@ export function StatsTicker() {
         <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-slate-50 dark:from-slate-900/50 to-transparent z-10 pointer-events-none" />
         <div className="flex overflow-hidden">
           <motion.div
-            className="flex gap-8 md:gap-16 items-center"
+            className="flex gap-8 md:gap-16 items-center whitespace-nowrap"
             animate={{
-              x: [0, -1000],
+              x: ["0%", "-50%"],
             }}
             transition={{
-              duration: 25,
+              duration: 20,
               ease: "linear",
               repeat: Infinity,
             }}
             whileHover={{ animationPlayState: "paused" }}
           >
-            {duplicatedStats.map((stat, index) => (
+            {marqueeStats.map((stat, index) => (
               <div
                 key={`${stat.label}-${index}`}
-                className="flex items-center gap-4 whitespace-nowrap px-4"
+                className="flex items-center gap-4 px-4"
               >
                 <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 text-emerald-500">
                   <stat.icon className="h-5 w-5" />
