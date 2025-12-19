@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((s) => s.isOpen);
   const selectedPlan = useCheckoutStore((s) => s.selectedPlan);
   const close = useCheckoutStore((s) => s.close);
-  const baseDescription = "��迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
+  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
   const descriptionText = selectedPlan
     ? `您已选择 "${selectedPlan}" 方案。${baseDescription}`
     : baseDescription;
@@ -46,7 +46,7 @@ export function CheckoutDialog() {
         if (ok) {
           toast.success("已成功复制到剪贴板！");
         } else {
-          toast.error("复制失败，请���试手动选择并复制。");
+          toast.error("复制失败，请尝试手动选择并复制。");
         }
       } catch (e) {
         console.error("Fallback copy failed:", e);
@@ -96,7 +96,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center pt-2">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11 text-base font-medium">
-            返回预览页��
+            返回预览页面
           </Button>
         </DialogFooter>
       </DialogContent>
