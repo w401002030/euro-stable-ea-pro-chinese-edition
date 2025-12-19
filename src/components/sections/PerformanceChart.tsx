@@ -38,7 +38,7 @@ export function PerformanceChart() {
                 查看我们的EA策略从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                开启复利���来的爆发式增长魅力
+                并感受复利带来的魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -110,7 +110,7 @@ export function PerformanceChart() {
                         borderRadius: "var(--radius)",
                         boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
                       }}
-                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户���额"]}
+                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户余额"]}
                       cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
                     />
                     <Area
