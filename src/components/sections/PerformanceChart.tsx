@@ -63,7 +63,7 @@ export function PerformanceChart() {
                     margin={{
                       top: 10,
                       right: 20,
-                      left: 40,
+                      left: 65,
                       bottom: 10,
                     }}
                   >
