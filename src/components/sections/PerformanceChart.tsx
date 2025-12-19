@@ -34,11 +34,13 @@ export function PerformanceChart() {
               资金增长曲线
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
-              <p className="text-xl md:text-2xl font-semibold text-foreground">
-                从小资金���启的稳定增长曲线。
+              <p className="text-xl md:text-2xl font-semibold text-foreground text-center">
+                查看我们的EA从1000美元起步，22个月内突破
+                <span className="text-emerald-500 font-bold px-1 text-2xl md:text-3xl">11万</span>
+                美金的稳���增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并��受复利带来的魅力
+                开启复利带来的爆发式增长魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -53,7 +55,7 @@ export function PerformanceChart() {
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden border-2 border-emerald-500/20">
             <CardHeader>
-              <CardTitle>资金增长曲线 (美金)</CardTitle>
+              <CardTitle>资金增长曲线 (美元)</CardTitle>
             </CardHeader>
             <CardContent className="p-0 pt-4">
               <div className="h-[400px] md:h-[500px] w-full min-h-[400px]">
@@ -63,7 +65,7 @@ export function PerformanceChart() {
                     margin={{
                       top: 10,
                       right: 20,
-                      left: 80,
+                      left: 90, // Increased from 80 to 90 to accommodate 6-digit values ($113,580)
                       bottom: 10,
                     }}
                   >
@@ -101,7 +103,7 @@ export function PerformanceChart() {
                       tickMargin={12}
                       fontSize={12}
                       domain={['auto', 'auto']}
-                      tickFormatter={(value) => value.toLocaleString()}
+                      tickFormatter={(value) => `$${value.toLocaleString()}`}
                     />
                     <Tooltip
                       contentStyle={{
@@ -110,7 +112,7 @@ export function PerformanceChart() {
                         borderRadius: "var(--radius)",
                         boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
                       }}
-                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户余额"]}
+                      formatter={(value: number) => [`$${value.toLocaleString()}`, "账户余额"]}
                       cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
                     />
                     <Area
@@ -119,7 +121,7 @@ export function PerformanceChart() {
                       stroke="#10B981"
                       strokeWidth={3}
                       fill="url(#profitFill)"
-                      animationDuration={2000}
+                      animationDuration={2500}
                     />
                   </AreaChart>
                 </ResponsiveContainer>
