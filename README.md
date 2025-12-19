@@ -1,6 +1,6 @@
 # Euro Stable EA - Pro Chinese Edition
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/w401002030/euro-stable-ea-pro-chinese-edition)
 
 A visually stunning, high-conversion sales landing page for **Euro Stable EA**, adapted for the Chinese market. This comprehensive marketing platform showcases an automated Forex trading robot with minimalist, trust-inspiring design, interactive performance charts, and optimized user flows for maximum engagement and conversions.
 
@@ -71,7 +71,7 @@ Deploy to Cloudflare Workers/Pages with one command:
 bun run deploy
 ```
 
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/w401002030/euro-stable-ea-pro-chinese-edition)
 
 This bundles assets, runs Wrangler, and deploys your app globally on Cloudflare's edge network. Free tier available.
 
