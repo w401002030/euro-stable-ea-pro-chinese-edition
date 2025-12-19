@@ -35,7 +35,7 @@ export function PerformanceChart() {
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground text-center">
-                查���我们的EA策略从小资金开启的稳定增长曲线。
+                查看我们的EA策略从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
                 并感受复利带来的魅力
@@ -53,7 +53,7 @@ export function PerformanceChart() {
           </div>
           <Card className="shadow-xl dark:shadow-emerald-500/10 overflow-hidden border-2 border-emerald-500/20">
             <CardHeader>
-              <CardTitle>资金增长曲线 (美��)</CardTitle>
+              <CardTitle>资金增长曲线 (美元)</CardTitle>
             </CardHeader>
             <CardContent className="p-0 pt-4">
               <div className="h-[400px] md:h-[500px] w-full min-h-[400px]">
@@ -110,7 +110,7 @@ export function PerformanceChart() {
                         borderRadius: "var(--radius)",
                         boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
                       }}
-                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户余��"]}
+                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户余额"]}
                       cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
                     />
                     <Area
