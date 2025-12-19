@@ -35,10 +35,10 @@ export function PerformanceChart() {
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground">
-                从小资金开启的稳定增长曲线。
+                ��小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并享受复利带来的魅力
+                并享受复利带来的魅��
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -93,7 +93,7 @@ export function PerformanceChart() {
                       tickMargin={12}
                       fontSize={12}
                       interval="preserveStartEnd"
-                      minTickGap={30}
+                      minTickGap={60}
                     />
                     <YAxis
                       tickLine={false}

@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的���置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
+  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时���为：北京时间（UTC+8）09:00 - 18:00。";
   const descriptionText = selectedPlan
     ? `您已选择 "${selectedPlan}" 方案。${baseDescription}`
     : baseDescription;
@@ -47,7 +47,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已成功复制到剪贴板！");
       } else {
-        toast.error("复制���败，请尝试手动选择并复制。");
+        toast.error("复制失败，请尝试手动选择并复制。");
       }
     }
   }, []);
@@ -55,7 +55,7 @@ export function CheckoutDialog() {
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
       <DialogContent className="max-w-[95vw] sm:max-w-md rounded-2xl">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-foreground">联系购���</DialogTitle>
+          <DialogTitle className="text-2xl font-bold text-foreground">联系购买</DialogTitle>
           <DialogDescription className="text-base md:text-lg font-medium leading-relaxed text-muted-foreground mt-2">
             {descriptionText}
           </DialogDescription>
@@ -92,7 +92,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center pt-2">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11 text-base font-medium">
-            返回预览���面
+            返回预览页面
           </Button>
         </DialogFooter>
       </DialogContent>
