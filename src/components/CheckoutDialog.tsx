@@ -46,7 +46,7 @@ export function CheckoutDialog() {
         if (ok) {
           toast.success("已成功复制到剪贴板！");
         } else {
-          toast.error("复制失败，请尝试手动选择并复制。");
+          toast.error("复制失败，请��试手动选择并复制。");
         }
       } catch (e) {
         console.error("Fallback copy failed:", e);
@@ -69,7 +69,7 @@ export function CheckoutDialog() {
             {[
               { label: "联系电话 / 微信", value: phoneNum },
               { label: "国际专线", value: overseasPhoneNum },
-              { label: "官��邮箱", value: emailAddr },
+              { label: "官方邮箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">
