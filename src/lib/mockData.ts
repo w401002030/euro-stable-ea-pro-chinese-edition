@@ -40,187 +40,77 @@ export const features: {
   icon: LucideIcon;
   title: string;
   description: string;
-}[] = [
-  {
-    icon: Zap,
-    title: "Fully Automated AI Trading",
-    description: "Powered by deep neural network algorithms, automatically identifies market trends and executes trades 24/7—no manual monitoring required.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Compound Growth Engine",
-    description: "Dynamic position management adjusts lot sizes as account grows, enabling exponential compounding.",
-  },
-  {
-    icon: BarChart,
-    title: "Major FX Pairs Optimized",
-    description: "Perfectly suited for EURUSD, GBPUSD & majors; diversifies across pairs to reduce systemic risk.",
-  },
-  {
-    icon: LifeBuoy,
-    title: "Smart News Filter",
-    description: "Auto-detects high-impact economic releases & pauses during volatility to protect capital.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Ultra-Low Drawdown Control",
-    description: "Multi-layered risk algorithms strictly limit per-trade exposure for controlled drawdowns.",
-  },
-  {
-    icon: Clock,
-    title: "Expert Tech Support",
-    description: "One-on-one remote setup guidance & strategy optimization to ensure seamless start.",
-  },
-];
+}[] = [{icon: Zap, title: "全自动智能交易", description: "基于深度神经网络算法，24小时全天候自动识别市场趋势并执行交易，无需人工盯盘。"}, {icon: TrendingUp, title: "复利增长模式", description: "动态仓位管理，根据账户增长自动调整手数，实现指数级复利增长。"}, {icon: BarChart, title: "主要外汇货币对优化", description: "完美适配EURUSD、GBPUSD等主流货币对，跨对分散投资降低系统风险。"}, {icon: LifeBuoy, title: "智能新闻过滤", description: "自动检测高影响力经济事件，波动期暂停交易保护资金。"}, {icon: ShieldCheck, title: "超低回撤控制", description: "多层风险算法严格限制单笔交易敞口，确保可控回撤。"}, {icon: Clock, title: "专家技术支持", description: "一对一远程安装指导与策略优化，确保顺畅启动。"}];
 // Data for the pricing plans
-export const pricingPlans = [
-  {
-    name: "v2.3 Standard Edition",
-    price: "$299",
-    features: [
-      "1 Live Account Lifetime License",
-      "Standard Technical Support",
-      "Min. Capital: $500 (Cent Account)",
-      "Free VPS Deployment Guide",
-    ],
-    isRecommended: false,
-  },
-  {
-    name: "V3 Pro Edition",
-    price: "$599",
-    features: [
-      "2 Live Accounts Lifetime License",
-      "Lifetime Free Updates",
-      "Priority Support",
-      "Advanced News Filter",
-      "Min. Capital: $1,000 (USD Account)",
-      "Free VPS Hosting Guide",
-    ],
-    isRecommended: true,
-  },
-  {
-    name: "V4 Beta Flagship Edition",
-    price: "Coming Soon",
-    features: [
-      "3 Live Accounts Lifetime License",
-      "Unlimited Demo Licenses",
-      "24/7 Expert Support",
-      "Exclusive Beta Access",
-      "Min. Capital: $10,000+",
-      "Low-Latency VPS Support",
-    ],
-    isRecommended: false,
-  },
-];
+export const pricingPlans = [{name: "v2.3 标准版", price: "$299", features: ["1个真实账户终身许可","标准技术支持","建议初始资金：最低500美元 (美分账户)","免费VPS部署教程"], isRecommended: false}, {name: "V3 Pro 专业版", price: "$599", features: ["2个真实账户终身许可","终身免费更新","优先技术支持","高级新闻过滤","建议初始资金：1000美元 (美金账户)","免费VPS主机教程"], isRecommended: true}, {name: "V4 Beta 旗舰版", price: "即将推出", features: ["3个真实账户终身许可","无限模拟账户许可","24/7专家支持","独家Beta访问","建议初始资金：10000美元以上","低延迟VPS支持"], isRecommended: false}];
 // Data for the FAQ section
-export const faqItems = [
-  {
-    question: "What is MT4?",
-    answer:
-      "MT4 (MetaTrader 4) is the world's top forex platform with EA support, charting, orders & one-click trading.",
-  },
-  {
-    question: "What is an EA (Expert Advisor)?",
-    answer:
-      "Fully automated trading robot for MetaTrader; executes logic-based trades 24/7 without emotions.",
-  },
-  {
-    question: "Minimum capital for Euro Stable EA?",
-    answer:
-      "Standard: $1,000 USD. Cent: $500 min. for margin/volatility.",
-  },
-  {
-    question: "Need PC on 24/7?",
-    answer:
-      "MT4 must stay online. VPS guides for reliable cloud 24/7 ops.",
-  },
-  {
-    question: "Setup complexity?",
-    answer:
-      "Simple: 10-15 min with guides/videos. Remote help available.",
-  },
-  {
-    question: "Recurring fees?",
-    answer:
-      "None—lifetime license w/ free updates forever.",
-  },
-  {
-    question: "24/7 Support",
-    answer:
-      "Phone: +86 18666888095 / (719) 524-8014 | Email: 673351805@qq.com | Live chat.",
-  },
-];
+export const faqItems = [{question: "什么是MT4？", answer: "MT4 (MetaTrader 4) 是全球顶级外汇平台，支持EA、图表、订单和一键交易。"}, {question: "什么是EA（专家顾问）？", answer: "全自动交易机器人，24/7基于逻辑执行交易，无情绪干扰。"}, {question: "最低资金要求？", answer: "标准：1000美元。美分账户：500美元最低。"}, {question: "需要24小时开机？", answer: "MT4需持续在线，提供VPS云端运行指南。"}, {question: "安装复杂吗？", answer: "简单，10-15分钟附教程视频，远程支持可用。"}, {question: "有续费吗？", answer: "无——终身许可，免费更新。"}, {question: "24小时热线", answer: "电话: +86 18666888095 / (719) 524-8014 | 邮箱: 673351805@qq.com | 直播聊天。"}];
 // Data for the stats ticker
-export const statsData = [
-  { icon: TrendingUp, label: "Win Rate", value: "85.3%" },
-  { icon: DollarSign, label: "Total Profit", value: "$228k+" },
-  { icon: TrendingDown, label: "Max Drawdown", value: "15.2%" },
-  { icon: Users, label: "Active Users", value: "12,847+" },
-];
+export const statsData = [{icon: TrendingUp, label: "胜率", value: "85.3%"}, {icon: DollarSign, label: "总盈利", value: "$228k+"}, {icon: TrendingDown, label: "最大回撤", value: "15.2%"}, {icon: Users, label: "活跃用户", value: "12,847+"}];
 // Data for testimonials
 export const testimonials = [
   {
-    quote: "Euro Stable EA transformed my investing. Impressive stability & drawdown control.",
+    quote: "Euro Stable EA 彻底改变了我的投资，稳定性与回撤控制令人印象深刻。",
     author: "Alex Johnson",
     role: "Full-time Trader",
   },
   {
-    quote: "As investment manager, V3Pro exceeded expectations in reliability.",
+    quote: "作为投资经理，V3Pro 可靠性超预期。",
     author: "Sophia Lee",
     role: "Asset Manager",
   },
   {
-    quote: "Pro support, smooth setup. Stable profits for 3 months.",
+    quote: "专业支持，安装顺畅，3个月稳定盈利。",
     author: "Michael Chen",
     role: "Forex Enthusiast",
   },
   {
-    quote: "Rigorous risk logic ideal for long-term portfolios.",
+    quote: "严谨风险逻辑完美适合长期投资组合。",
     author: "Emma Wilson",
     role: "Professional Investor",
   },
   {
-    quote: "News filter aced volatile markets, avoided risks.",
+    quote: "新闻过滤器完美应对波动市场，避免风险。",
     author: "David Park",
     role: "Senior Trader",
   },
   {
-    quote: "Tech team patiently setup for newbie.",
+    quote: "技术团队耐心指导，新手也能轻松上手。",
     author: "Olivia Kim",
     role: "Novice Investor",
   },
   {
-    quote: "Precise quant logic, smooth curves.",
+    quote: "精准量化逻辑，收益曲线完美平滑。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
   {
-    quote: "News filter prevented losses, trustworthy.",
+    quote: "新闻过滤器避免损失，值得信赖。",
     author: "Lily Wang",
     role: "Business Owner",
   },
   {
-    quote: "Full support, suits small accounts.",
+    quote: "全方位支持，完美适配小额账户。",
     author: "Ethan Liu",
     role: "Retail Investor",
   },
   {
-    quote: "Top drawdown control, confident profits.",
+    quote: "顶级回撤控制，盈利信心十足。",
     author: "Grace Huang",
     role: "Software Engineer",
   },
   {
-    quote: "15%+ monthly for a year.",
+    quote: "连续一年月收益15%以上。",
     author: "James Miller",
     role: "Private Investor",
   },
   {
-    quote: "Hedging for peace, beautiful curve.",
+    quote: "对冲策略带来安心，完美收益曲线。",
     author: "Sarah Thompson",
     role: "Financial Analyst",
   },
   {
-    quote: "Fast fixes, stable earnings.",
+    quote: "快速问题解决，稳定持续收益。",
     author: "Kevin Anderson",
     role: "Freelancer",
   },
