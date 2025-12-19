@@ -35,7 +35,7 @@ export function PerformanceChart() {
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground text-center">
-                查看我们的EA策���从小资金开启的稳定增长曲线。
+                查看我们的EA策略从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
                 并感受复利带来的魅力
