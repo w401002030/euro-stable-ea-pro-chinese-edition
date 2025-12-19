@@ -35,12 +35,12 @@ export function PerformanceChart() {
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground text-center">
-                查看我们的EA从1000美��起步，22个月内突破
+                查看我们的EA从1000美金���步，22个月内突破
                 <span className="text-emerald-500 font-bold px-1 text-2xl md:text-3xl">11万</span>
-                美金的稳定增长曲线。
+                美金的稳���增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                开���复利带来的爆发式增长魅���
+                开启复利带来的爆发式增长魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -103,7 +103,7 @@ export function PerformanceChart() {
                       tickMargin={12}
                       fontSize={11}
                       domain={[1000, 'auto']}
-                      tickFormatter={(value) => `$${value.toLocaleString()}`}
+                      tickFormatter={(value) => `${value.toLocaleString()}`}
                     />
                     <Tooltip
                       contentStyle={{
@@ -112,7 +112,7 @@ export function PerformanceChart() {
                         borderRadius: "var(--radius)",
                         boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
                       }}
-                      formatter={(value: number) => [`$${value.toLocaleString()}`, "账户余额"]}
+                      formatter={(value: number) => [`${value.toLocaleString()}`, "账户余额"]}
                       cursor={{ stroke: 'hsl(var(--foreground))', strokeWidth: 1, strokeDasharray: '3 3' }}
                     />
                     <Area

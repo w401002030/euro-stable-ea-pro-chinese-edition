@@ -20,10 +20,10 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            选择适合您的���划
+            选择适合您的计划
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付款，终身使用。无订阅，无隐藏费用。
+            一次性付款��终身使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
@@ -81,7 +81,7 @@ export function Pricing() {
                   <CardFooter>
                     {isBeta ? (
                       <Button className="w-full text-lg md:text-xl px-10 py-6 lg:py-8 font-bold" disabled variant="outline">
-                        ���请期待
+                        敬请期待
                       </Button>
                     ) : (
                       <Button
@@ -90,7 +90,7 @@ export function Pricing() {
                         className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl"
                         variant="default"
                       >
-                        立即购买
+                        立即���买
                       </Button>
                     )}
                   </CardFooter>
