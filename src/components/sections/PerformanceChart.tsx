@@ -38,7 +38,7 @@ export function PerformanceChart() {
                 从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并享受复利带来的魅���
+                并享受复利带来的魅力
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -47,7 +47,7 @@ export function PerformanceChart() {
                 onClick={() => window.open('https://www.myfxbook.com/zh/members/RobotForexProEA/eurostable-ea-lite/10995603', '_blank')}
                 className="w-full max-w-md mx-auto bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               >
-                查看实盘业��
+                查看实盘业绩
               </Button>
             </div>
           </div>

@@ -23,13 +23,12 @@ export function Pricing() {
             选择适合您的计划
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            一次性付款，终身使用。无订阅，无隐藏费用。
+            一次性付款，终���使用。无订阅，无隐藏费用。
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
           {pricingPlans.map((plan, index) => {
-            // Consistency: Check for "Beta" specifically as defined in mockData
-            const isBeta = plan.name.toLowerCase().includes("beta");
+            const isBeta = plan.price === "即将推出";
             const isRecommended = plan.isRecommended;
             return (
               <motion.div
@@ -82,7 +81,7 @@ export function Pricing() {
                   <CardFooter>
                     {isBeta ? (
                       <Button className="w-full text-lg md:text-xl px-10 py-6 lg:py-8 font-bold" disabled variant="outline">
-                        敬请期待
+                        ��请期待
                       </Button>
                     ) : (
                       <Button
@@ -91,7 +90,7 @@ export function Pricing() {
                         className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl"
                         variant="default"
                       >
-                        立���购买
+                        立即购买
                       </Button>
                     )}
                   </CardFooter>
