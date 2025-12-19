@@ -30,7 +30,6 @@ export function CheckoutDialog() {
       });
     } catch (err) {
       console.error("Clipboard copy failed:", err);
-      // Fallback for browsers without clipboard API
       const textarea = document.createElement("textarea");
       Object.assign(textarea.style, {
         position: "fixed",
@@ -46,7 +45,7 @@ export function CheckoutDialog() {
         if (ok) {
           toast.success("已成功复制到剪贴板！");
         } else {
-          toast.error("复制失败，请尝试手动选择并复制。");
+          toast.error("复制失败，请尝试手��选择并复制。");
         }
       } catch (e) {
         console.error("Fallback copy failed:", e);
