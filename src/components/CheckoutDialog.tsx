@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时���为：北京时间（UTC+8）09:00 - 18:00。";
+  const baseDescription = "欢迎通过电话或微信联系我们咨询详细���配置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
   const descriptionText = selectedPlan
     ? `您已选择 "${selectedPlan}" 方案。${baseDescription}`
     : baseDescription;
@@ -25,7 +25,7 @@ export function CheckoutDialog() {
   const copyToClipboard = useCallback(async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success("已成功复制到剪贴板！", {
+      toast.success("已成��复制到剪贴板！", {
         icon: <CheckCircle2 className="h-4 w-4 text-emerald-500" />,
       });
     } catch {
@@ -47,7 +47,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已成功复制到剪贴板！");
       } else {
-        toast.error("复制失败，请尝试手动选择并复制。");
+        toast.error("复制���败，请尝试手动选择并复制。");
       }
     }
   }, []);

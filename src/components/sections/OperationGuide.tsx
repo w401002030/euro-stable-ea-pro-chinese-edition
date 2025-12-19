@@ -6,17 +6,17 @@ const steps = [
   {
     icon: UserPlus,
     title: "1. 准备账户",
-    description: "��受监管的经纪商处开设 MT4 交易账户，建议使用 ECN ���低点差账户以获得最佳表现。",
+    description: "在受监管的经纪商处开设 MT4 交易账户，建议使�� ECN 低点差账户以获得最佳表现。",
   },
   {
     icon: Download,
-    title: "2. 下载软���",
-    description: "购买后，您将收到包含 EA 文件、���装手册和预设参数文件的下载链接。",
+    title: "2. 下载软件",
+    description: "购买后，您将收到���含 EA 文件、安装手册和预设参数文件的下载链接。",
   },
   {
     icon: Settings,
     title: "3. 加载 EA",
-    description: "将 EA 文件放入 MT4 专用目录，加载到指���的货币对图表，并导入我们提供的优化参数。",
+    description: "将 EA 文件放入 MT4 专用目录，加载到指定的货币对图表，并导入我们提供的优化参数。",
   },
   {
     icon: Play,
@@ -30,7 +30,7 @@ export function OperationGuide() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            操作���明
+            操作说明
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             只需简单的四个��骤，即可开启您的自动化交易之旅。
