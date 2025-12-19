@@ -31,14 +31,14 @@ export function PerformanceChart() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              真实的历史战绩
+              资金增长曲线
             </h2>
             <div className="flex flex-col items-center mx-auto max-w-2xl mt-4">
               <p className="text-xl md:text-2xl font-semibold text-foreground">
-                查看我们的EA从小资金开启的稳定增长曲线。
+                从小资金开启的稳定增长曲线。
               </p>
               <p className="mt-2 text-xl md:text-2xl font-bold text-golden-glow">
-                并享受复利带来的魅力
+                并享受复利带来的魅���
               </p>
             </div>
             <div className="flex justify-center mt-8">
@@ -47,7 +47,7 @@ export function PerformanceChart() {
                 onClick={() => window.open('https://www.myfxbook.com/zh/members/RobotForexProEA/eurostable-ea-lite/10995603', '_blank')}
                 className="w-full max-w-md mx-auto bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               >
-                查看实盘业绩
+                查看实盘业��
               </Button>
             </div>
           </div>
