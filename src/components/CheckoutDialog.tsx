@@ -12,10 +12,10 @@ import { toast } from "sonner";
 import { useCheckoutStore } from "@/hooks/useCheckoutStore";
 import { Copy, CheckCircle2 } from "lucide-react";
 export function CheckoutDialog() {
-  const isOpen = useCheckoutStore((state) => state.isOpen);
-  const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
-  const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
+  const isOpen = useCheckoutStore((s) => s.isOpen);
+  const selectedPlan = useCheckoutStore((s) => s.selectedPlan);
+  const close = useCheckoutStore((s) => s.close);
+  const baseDescription = "��迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
   const descriptionText = selectedPlan
     ? `您已选择 "${selectedPlan}" 方案。${baseDescription}`
     : baseDescription;
@@ -28,27 +28,31 @@ export function CheckoutDialog() {
       toast.success("已成功复制到剪贴板！", {
         icon: <CheckCircle2 className="h-4 w-4 text-emerald-500" />,
       });
-    } catch {
+    } catch (err) {
+      console.error("Clipboard copy failed:", err);
+      // Fallback for browsers without clipboard API
       const textarea = document.createElement("textarea");
       Object.assign(textarea.style, {
         position: "fixed",
-        left: "-99999px",
-        top: "50%",
-        width: "1px",
-        height: "1px",
+        left: "-9999px",
+        top: "0",
         opacity: "0",
       });
       textarea.value = text;
       document.body.appendChild(textarea);
-      textarea.focus();
       textarea.select();
-      const ok = document.execCommand("copy");
-      document.body.removeChild(textarea);
-      if (ok) {
-        toast.success("已成功复制到剪贴板！");
-      } else {
+      try {
+        const ok = document.execCommand("copy");
+        if (ok) {
+          toast.success("已成功复制到剪贴板！");
+        } else {
+          toast.error("复制失败，请尝试手动选择并复制。");
+        }
+      } catch (e) {
+        console.error("Fallback copy failed:", e);
         toast.error("复制失败，请尝试手动选择并复制。");
       }
+      document.body.removeChild(textarea);
     }
   }, []);
   return (
@@ -65,7 +69,7 @@ export function CheckoutDialog() {
             {[
               { label: "联系电话 / 微信", value: phoneNum },
               { label: "国际专线", value: overseasPhoneNum },
-              { label: "官方邮箱", value: emailAddr },
+              { label: "官��邮箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
                 <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider ml-1">
