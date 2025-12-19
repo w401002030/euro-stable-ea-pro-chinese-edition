@@ -48,28 +48,28 @@ export const features: {
   },
   {
     icon: TrendingUp,
-    title: "复利增长模���",
-    description: "动态仓位管理，根据账户增长自动调��手数，实现指数级复利增长。",
+    title: "复利增长模式",
+    description: "动态仓位管理，根据账户增长自动调整手数，实现��数级复利增长。",
   },
   {
     icon: BarChart,
-    title: "主要外汇货��对优化",
-    description: "完美适配EURUSD、GBPUSD等主流货币对，跨对分散投资降低系统风险。",
+    title: "主要外汇货币���优化",
+    description: "完美适配EURUSD、GBPUSD等主流货币对，跨对分散投资���低系统风险。",
   },
   {
     icon: LifeBuoy,
-    title: "智能新闻过��",
-    description: "自动检测高影响力经济事件，���动期暂停交易保护资金。",
+    title: "智能新闻过滤",
+    description: "自动检测高影响力经济事件，波动期暂停交易保护资金。",
   },
   {
     icon: ShieldCheck,
-    title: "超低回撤控制",
-    description: "多层风险算法严格限制单笔交易敞口，确保可控���撤。",
+    title: "超低回��控制",
+    description: "多层风险算法严���限制单笔交易敞口，确保可控回撤。",
   },
   {
     icon: Clock,
-    title: "专家技术支持",
-    description: "���对一远程安装指导与策略优化，确保顺畅启动。",
+    title: "专家技术支���",
+    description: "一对一远程安装指导与策略优化，确保顺畅启动。",
   }
 ];
 // Data for the pricing plans
@@ -78,9 +78,9 @@ export const pricingPlans = [
     name: "v2.3 标准版",
     price: "$299",
     features: [
-      "1个真实账户终���许可",
+      "1个真实账户终身许可",
       "标准技术支持",
-      "建议初始资金：最低500美元 (美���账户)",
+      "建议初始资金：最低500美元 (美分账户)",
       "免费 VPS 部署教程"
     ],
     isRecommended: false
@@ -99,14 +99,14 @@ export const pricingPlans = [
     isRecommended: true
   },
   {
-    name: "V4 Beta 旗��版",
+    name: "V4 Beta 旗舰版",
     price: "即将推出",
     features: [
       "3个真实账户终身许可",
       "无限模拟账户许可",
       "24/7 专家支持",
-      "独家 Beta 访问",
-      "建议初始资金：10000美元��上",
+      "独家 Beta ���问",
+      "建议初始资金：10000美元以上",
       "低延迟 VPS 支持"
     ],
     isRecommended: false
@@ -116,7 +116,7 @@ export const pricingPlans = [
 export const faqItems = [
   {
     question: "MT4是什么？",
-    answer: "MT4 (MetaTrader 4) 是全球顶级的外汇交易平台，支持运行EA、高级图表分��及一键交易。"
+    answer: "MT4 (MetaTrader 4) 是全球顶级的外汇交易平台，支持运行EA、高级图表分析及一键交易。"
   },
   {
     question: "EA是什么？",
@@ -128,15 +128,15 @@ export const faqItems = [
   },
   {
     question: "24h开机？",
-    answer: "是的，MT4需要持续在线。我们提供详细的VPS云端运行指南，确保您的EA 24小时稳定运行。"
+    answer: "是的，MT4需要持续在线。我们提供详细的VPS云端运行指南，确保��的EA 24小时稳定运行。"
   },
   {
     question: "安装？",
-    answer: "非常简单，通常只需10分钟即可完成。我们附带视频教程，���提供远程技术支持。"
+    answer: "非常简单，通常只需10分钟即可完成。我们附带视频教程，并提供���程技术支持。"
   },
   {
     question: "续费？",
-    answer: "无任何后续费���。我们提供的是终身许可，并包含免费的策略更新。"
+    answer: "无任何后续费用。我们提供的是终身许可，并包含免费的策略更新。"
   }
 ];
 // Data for the stats ticker
@@ -154,7 +154,7 @@ export const testimonials = [
     role: "Full-time Trader",
   },
   {
-    quote: "作��投资经理，V3Pro 可靠性超预期。",
+    quote: "作为投资经理，V3Pro 可靠性超预期。",
     author: "Sophia Lee",
     role: "Asset Manager",
   },
@@ -169,17 +169,17 @@ export const testimonials = [
     role: "Professional Investor",
   },
   {
-    quote: "新闻过滤器完美应对波动市场，避免风险。",
+    quote: "新闻过滤器完美��对波动市场，避免风险。",
     author: "David Park",
     role: "Senior Trader",
   },
   {
-    quote: "技术团队耐心指导，新手也能轻松上手。",
+    quote: "技术团队耐心指导，���手也能轻松上手。",
     author: "Olivia Kim",
     role: "Novice Investor",
   },
   {
-    quote: "精准量化逻辑，收益曲线完美平滑。",
+    quote: "精准量化逻辑，��益曲线完美平滑。",
     author: "Ryan Zhang",
     role: "Institutional Analyst",
   },
@@ -189,7 +189,7 @@ export const testimonials = [
     role: "Business Owner",
   },
   {
-    quote: "全方���支持，完美适配小额账户。",
+    quote: "全方��支持，完美适配小额账户。",
     author: "Ethan Liu",
     role: "Retail Investor",
   },
@@ -199,7 +199,7 @@ export const testimonials = [
     role: "Software Engineer",
   },
   {
-    quote: "连续一年月收益15%以上。",
+    quote: "连���一年月收益15%以上。",
     author: "James Miller",
     role: "Private Investor",
   },
