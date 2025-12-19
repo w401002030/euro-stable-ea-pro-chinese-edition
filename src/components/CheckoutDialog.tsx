@@ -15,7 +15,7 @@ export function CheckoutDialog() {
   const isOpen = useCheckoutStore((state) => state.isOpen);
   const selectedPlan = useCheckoutStore((state) => state.selectedPlan);
   const close = useCheckoutStore((state) => state.close);
-  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时间为：北京时间（UTC+8）09:00 - 18:00。";
+  const baseDescription = "欢迎通过电话或微信联系我们咨询详细的配置方案。微信与电话同号，在线服务时间为：北���时间（UTC+8）09:00 - 18:00。";
   const descriptionText = selectedPlan
     ? `您已选择 "${selectedPlan}" 方案。${baseDescription}`
     : baseDescription;
@@ -48,7 +48,7 @@ export function CheckoutDialog() {
       if (ok) {
         toast.success("已成功复制到剪贴板！");
       } else {
-        toast.error("复制失��，请尝试手动选择并复制。");
+        toast.error("���制失败，请尝试手动选择并复制。");
       }
     }
   }, []);
@@ -65,7 +65,7 @@ export function CheckoutDialog() {
           <div className="w-full space-y-4">
             {[
               { label: "联系电话 / 微信", value: phoneNum },
-              { label: "国际专线", value: overseasPhoneNum },
+              { label: "国际专���", value: overseasPhoneNum },
               { label: "官方邮箱", value: emailAddr },
             ].map((item) => (
               <div key={item.label} className="flex flex-col gap-1.5">
@@ -93,7 +93,7 @@ export function CheckoutDialog() {
         </div>
         <DialogFooter className="sm:justify-center pt-2">
           <Button variant="outline" onClick={close} className="w-full rounded-xl h-11 text-base font-medium">
-            ��回预览页面
+            返回预览页面
           </Button>
         </DialogFooter>
       </DialogContent>

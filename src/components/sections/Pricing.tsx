@@ -28,7 +28,8 @@ export function Pricing() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
           {pricingPlans.map((plan, index) => {
-            const isBeta = plan.name.includes("V4.beta");
+            // Consistency: Check for "Beta" specifically as defined in mockData
+            const isBeta = plan.name.toLowerCase().includes("beta");
             const isRecommended = plan.isRecommended;
             return (
               <motion.div
@@ -90,7 +91,7 @@ export function Pricing() {
                         className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-lg md:text-xl px-10 py-6 lg:py-8 font-bold shadow-xl"
                         variant="default"
                       >
-                        立即购买
+                        立���购买
                       </Button>
                     )}
                   </CardFooter>
